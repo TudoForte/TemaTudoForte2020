@@ -1,0 +1,211 @@
+<div id="product-container" data-product="{{ product.id }}">
+    <div id="title" class="wrapper-product-head">
+        {% element 'snippets/breadcrumb' %}
+
+        {% if not utils.is_mobile %}
+          {% element 'snippets/product-title' %}
+        {% endif %}
+    
+    </div>
+    <div class="row">
+        <div class="col-md-6 wrapper-product-info-left">
+
+            <div class="swiper-container wrapper-top">
+                <div class="swiper-wrapper">
+
+                </div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next -product"></div>
+                <div class="swiper-button-prev -product"></div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination -bullet-product"></div>
+            </div>
+           
+            <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+
+                </div>
+            </div>
+
+            {% if utils.is_mobile %}
+              {% element 'snippets/product-title' %}
+            {% endif %}
+           
+        </div>
+        <div class="col-md-6 wrapper-product-info-right">
+
+            <div class="product-labels">
+                {{ productHelper.labels() }}
+            </div>
+
+            <a onclick="jump('rating')"><div id='rating-{{ product.id }}' class="wrapper-rating"></div></a>
+
+            <div class="product-stock">
+                <p>Disponibilidade:
+                    {{ (product.stock > 0 and product.available) ? '<span>Imediata, Em Estoque!</span>' : '<span class="no-stock">Produto Sem Estoque</span>' }}
+                </p>
+            </div>
+
+        
+            {% if product.id == '9714' %}
+                {% element 'snippets/instalacao' %}
+            {% endif %}
+
+           
+
+            {% element 'snippets/page_product_price' %}
+
+            <div class="wrapper-variants">
+            </div>
+
+            <button class="payment-methods-link" onclick="jump('payment')">Formas de Pagamento</button>
+
+            <div class="wrapper-add-cart -visible">
+
+                <div class="wrapper-quantity">
+                    <span class="quantity-title">Quantidade</span>
+                    <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                        <input class="quantity" id="quant" min="1" name="quantity" value="1" type="number">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                            class="plus">+</button>
+                    </div>
+                </div>
+
+                <button class="product-buy-cart-button -page-product" onclick="buttonBuy()" data-app="product.buy-button"  data-product="{{ product.id }}">
+                    Comprar Agora
+                </button>
+
+                <button class="product-add-cart-button -page-product" data-app="product.buy-button" onclick="openSidebar()" data-product="{{ product.id }}">
+                    Adicionar ao Carrinho
+                </button>
+            </div>
+
+
+            <div class="wrapper-shipping">
+                <i class="fa fa-times shipping-button-close" onclick="cleanShipping()"></i>
+                <span class="shipping-title">Calcule o Frete e o Prazo de Entrega</span>
+                <div>
+                    <input class="wrapper-shipping-input" id="shipping"  
+                    placeholder="Digite o CEP" 
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Digite o CEP'" type="text"  />
+                    <button class="wrapper-shipping-button" onclick="getShipping()">Calcular Frete</button>
+                    <a class="shipping-dont-cep" target="_blank" rel="noreferrer"  href="http://www.buscacep.correios.com.br/sistemas/buscacep/default.cfm">Não Sei Meu CEP</a>
+                </div>
+            </div>
+
+
+            {% element 'snippets/info-cart' %}
+
+           
+
+        </div>
+    </div>
+
+    <div class="row wrapper-product-rating">
+      <iframe id='AV_widget_iframe' frameBorder="0" width="100%" height="100%" src="//cl.avis-verifies.com/br/cache/5/a/4/5a440199-2c8f-3324-9d23-8788cc5b3ec9/widget4/5a440199-2c8f-3324-9d23-8788cc5b3ec9horizontal_index.html"></iframe>
+    </div>
+</div>
+
+<!-- <div class="swiper-container wrapper-product-rating" id="swiper-rating-product">
+    <div class="swiper-wrapper">
+
+    </div>
+    <div class="swiper-pagination"></div>
+</div> -->
+
+
+
+{% element 'snippets/banner-product-brands' %}
+
+<div id="ProdBlock">
+    <div id="ProdAbas" class="abasProduto">
+        <ul>
+            {% for key, tab in productTabs %}
+              {% if tab.container_id %}
+              <li id="{{ tab.id }}" {% if key=='description' %}class="aberta" {% endif %}>
+                <a href="#" data-tab-container-id="{{ tab.container_id }}" data-tab-url="{{ tab.url }}">{{ tab.description }}</a>
+              </li>
+              {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div id="descricao" class="prodBox">
+        <div class="board">
+            <div class="board_htm description">
+                {{ product.description ? product.description : product.description_small }}
+            </div>
+        </div>
+    </div>
+
+    <div id="itensInclusos" class="prodBox">
+        <div class="board">
+            {{ product.included_items }}
+        </div>
+    </div>
+
+    <div id="caracteristicas" class="prodBox">
+        <div class='board'>
+            {% element 'product/properties' %}
+        </div>
+    </div>
+
+    {{ productTabs.custom.content }}
+    {{ productTabs.downloads.content }}
+</div>
+
+<div id="payment"></div>
+{% element 'snippets/option_payment' %}
+
+<div id="rating" class="page-content product-wrapper">
+    <div class="NETREVIEWS_PRODUCT_REVIEWS" data-product-id="{{ product.id }}" data-product-price="{{ product.price }}" data-product-name="{{ product.name }}" data-product-url="{{ product.link }}"></div>
+</div>
+
+<style>
+    #netreviews_button_more_reviews .netreviews_button{
+        font-family: sans-serif;
+        padding: 20px;
+    }
+
+    .display{
+        font-family: sans-serif;
+        text-transform: capitalize;
+    }
+
+    #netreviews_rating_section{
+        border-bottom: 0px;
+    }
+
+    #netreviews_reviews_tab{
+        margin-bottom: 20px;
+        background-color: #f1f1f1ab;
+    }
+
+    .netreviews_certification{
+        z-index: 1;
+    }
+
+    @media screen and (max-width: 600px) {
+        .netreviews_review_part{
+            width: 100%;
+        }
+
+        #netreviews_reviews_tab{
+        margin-bottom: 0px;
+        }
+    }
+
+</style>
+
+
+<script charset="utf-8" rel="preload" as="script" defer
+    src="//cl.avis-verifies.com/br/cache/5/a/4/5a440199-2c8f-3324-9d23-8788cc5b3ec9/AWS/PRODUCT_API/tag.min.js">
+</script>
+
+
+
+

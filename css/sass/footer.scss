@@ -1,0 +1,386 @@
+/**
+ * Footer
+ */
+
+.footer {
+  background-color: $color-gray-eb;
+  font-size: 14px;
+  // border-top: 1px solid $primary-color;
+  // margin-top: 20px;
+
+  .wrapper-footer {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+  }
+
+  .wrapper-footer-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .footer-title-brands {
+    font: bold 1.1em $primary-font;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+
+  .wrapper-footer-list-brands {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 40px;
+  }
+
+  .wrapper-footer-list-item {
+    margin-right: 5px;
+  }
+
+  .wrapper-footer-list-item > a{
+    text-decoration: none;
+  }
+
+  .wrapper-footer-list-item > a:hover{
+    text-decoration: underline;
+  }
+
+  .footer-list-phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 24px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+
+  .footer-list-phone > strong {
+    font-weight: bold;
+  }
+
+  .footer-list-phone > a {
+    text-decoration: none;
+  }
+
+  .footer-list-phone > a:hover{
+    text-decoration: underline; 
+  }
+
+  .footer-list-item {
+    height: 24px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+
+  .footer-list-item > a {
+    text-decoration: none;
+  }
+
+  .footer-list-item > a:hover{
+    text-decoration: underline; 
+  }
+
+  .wrapper-icon-social-media {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .icon-social-media-item {
+    margin-right: 10px;
+  }
+
+  .icon-social-media {
+    width: 30px;
+  }
+
+  .footer-title {
+    font: bold 1.1em $primary-font;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .footer-subtitle {
+    margin-bottom: 20px;
+    // height: 10px;
+    line-height: 20px;
+  }
+
+  .footer-title-payment {
+    font: bold 1.1em $primary-font;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+  .wrapper-payment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0px;
+  }
+
+  .title-payment-form {
+    margin-bottom: 10px;
+  }
+
+  .wrapper-payment-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    height: 25px;
+  }
+
+  .payment-form-item {
+    width: 35px;
+    margin-right: 7px;
+  }
+
+  .payment-form-item > img {
+    width: 40px;
+  }
+
+  .wrapper-store-security {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .title-store-security {
+    font: bold 1.1em $primary-font;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+  .store-security-item {
+    margin-right: 10px;
+    margin-bottom: 5px;
+    height: 50px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .ebit{
+    width:75px;
+    // margin-top:5px
+  }
+
+  .google{
+    width: 150px !important; 
+  }
+
+  .opinioes{
+    width: 160px;
+  }
+
+  .store-security-item > a > img {
+    width: 120px;
+  }
+
+  // .wrapper-contact{
+  //   margin-top: 40px;
+  //   padding: 30px;
+  // }
+  
+  // .footer-title.-telesales{
+  //   margin-top: 0px;
+  // }
+
+  .wrapper-whatsapp{
+    width: 100%;
+    display: flex;
+    font-size: 24px;
+    font: bold 1.1em "Open Sans", sans-serif;
+    text-transform: uppercase;
+    margin-top: 20px;
+    border: 1px solid $color-gray-8c;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .wrapper-whatsapp > a {
+    text-decoration: none;
+  }
+
+  .wrapper-whatsapp > a > i {
+    font-size: 24px;
+    color: #25D366;
+  }
+
+  .footer-title.-atendimento{
+    margin-top: 20px;
+    display: block;
+  }
+
+  .footer-subtitle.-atendimento{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+}
+
+@media screen and (max-width: 580px) {
+  .footer {
+
+    // .-telesales {
+    //   display: none;
+    // }
+
+    // .-whatsapp {
+    //   display: none;
+    // }
+
+    .footer-title-brands {
+      display: none;
+    }
+
+    .wrapper-footer-list-brands {
+      display: none;
+    }
+
+    .footer-title-payment {
+      margin-bottom: 0px;
+    }
+
+    .wrapper-payment {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      margin-left: 0px;
+    }
+
+    .wrapper-store-security{
+      // // justify-content: space-between;
+      // align-items: unset;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+    }
+
+    .title-payment-form {
+      margin-top: 15px;
+    }
+
+    .footer-title {
+      margin-top: 10px;
+    }
+
+    .wrapper-footer{
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 10px;
+    }
+
+    .wrapper-footer-list {
+      padding-top: 0px;
+    }
+
+    .footer-title-payment,
+    .title-store-security,
+    .footer-title {
+      margin-top: 20px;
+    }
+
+    .title-payment-form {
+      margin-top: 5px;
+    }
+
+    .store-security-item{
+      height: 60px;
+    }
+
+
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer {
+    .payment-form-item {
+      width: 30px;
+      margin-bottom: 10px; 
+    }
+
+    .footer-title {
+      display: none;
+    }
+
+    .wrapper-footer-list {
+      display: none;
+    }
+
+    .wrapper-icon-social-media {
+      display: none;
+    }
+
+    .wrapper-whatsapp{
+      background-color: #25D366;
+      border: 0px;
+      
+    }
+
+    .wrapper-whatsapp > a {
+      color: $color-white;
+    }
+
+    .wrapper-whatsapp > a > i{
+      color: $color-white;
+    }
+
+    .wrapper-footer-list.-telesales{
+      display: block;
+    }
+
+    .footer-title.-telesales{
+      display: block;
+      margin-bottom: 0px;
+    }
+
+    .footer-title.-atendimento{
+      display: block;
+      margin-bottom: 0px;
+    }
+
+    .opinioes{
+      width: 150px !important;
+    }
+
+    .google{
+      width: 150px !important;
+    }
+
+    .ebit{
+      width: 94px;
+    }
+
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    .wrapper-payment{
+      margin-bottom: 25px;
+    }
+
+    .store-security-item > a > img {
+      width: 130px;
+    }
+  }
+}
+
+

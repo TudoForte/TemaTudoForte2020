@@ -1,0 +1,201 @@
+{% if utils.is_mobile %}
+        {% element 'snippets/menu-mobile-category' %}
+{% endif %}
+
+{% if not utils.is_mobile %}
+{% element 'snippets/banner_square_top' %}
+{% endif %}
+
+
+<style>
+    .wrapper-home-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px; 
+        margin-bottom: 20px; 
+    }
+
+    .home-title{
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .wrapper-home-subtitle{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-bottom: 1px solid #d6e5f2;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .home-subtitle{
+        font-size: 24px;
+        font-weight: bold;
+        color: #0047d9;
+        margin-bottom: 5px;
+    }
+
+
+    @media screen and (max-width: 580px) {
+        .home-title{
+            font-size: 16px;
+        }  
+
+        .wrapper-home-subtitle{
+            justify-content: center;
+            margin-top: 20px;
+            border-bottom: 0px;
+            margin-bottom: 0px;
+        }
+        
+        .home-subtitle{
+            font-size: 16px;
+        }
+    }
+
+
+</style>
+
+<div class="wrapper-home-title">
+    <h1 class="home-title">Segurança Eletrônica</h1>
+</div>
+
+<div class="wrapper-home-subtitle">
+    <h2 class="home-subtitle">Intelbras | Ofertas de Hoje</h2>
+</div>
+
+{% set products = Products({
+    'filter': 'featured',
+    'limit': 8,
+    'order': {'quantity_sold': 'desc'},
+    'brands': 'intelbras'
+}) %}
+
+{% element 'snippets/showcase' {
+    "products": products
+} %}
+
+<div class="wrapper-home-subtitle">
+    <h2 class="home-subtitle">Giga Security | Ofertas de Hoje</h2>
+</div>
+
+{% set giga = Products({
+    'filter': 'featured',
+    'limit': 8,
+    'order': {'quantity_sold': 'desc'},
+    'brands': 'Giga Security'
+}) %}
+
+{% element 'snippets/showcase' {
+    "products": giga
+} %}
+
+<div class="wrapper-home-subtitle">
+    <h2 class="home-subtitle">Câmeras de Segurança</h2>
+</div>
+
+{% set cameras = Products({
+    'filter': 'featured',
+    'limit': 8,
+    'order': {'quantity_sold': 'desc'},
+    'categories': 66
+}) %}
+
+{% element 'snippets/showcase' {
+    "products": cameras
+} %}
+
+
+
+{% element 'snippets/banner_wide_middle' %}
+
+
+<div class="wrapper-home-subtitle">
+    <h2 class="home-subtitle">DVR Stand Alone</h2>
+</div>
+
+{% set dvd = Products({
+    'filter': 'featured',
+    'limit': 8,
+    'order': {'quantity_sold': 'desc'},
+    'categories': 68
+}) %}
+
+{% element 'snippets/showcase' {
+    "products": dvd
+} %}
+
+<div class="wrapper-home-subtitle">
+    <h2 class="home-subtitle">Kit Câmeras de Segurança</h2>
+</div>
+
+{% set kit = Products({
+    'filter': 'featured',
+    'limit': 8,
+    'order': {'quantity_sold': 'desc'},
+    'categories': 236
+}) %}
+
+{% element 'snippets/showcase' {
+    "products": kit
+} %}
+
+<div class="wrapper-home-subtitle">
+    <h2 class="home-subtitle">Kit de Alarmes em Destaque</h2>
+</div>
+
+{% set alarmes = Products({
+    'filter': 'featured',
+    'limit': 8,
+    'order': {'quantity_sold': 'desc'},
+    'categories': 399
+}) %}
+
+{% element 'snippets/showcase' {
+    "products": alarmes
+} %}
+
+{% if not utils.is_mobile %}
+{% element 'snippets/banner_square_middle' %}
+{% endif %}
+
+
+{% element 'snippets/banner_wide_bottom' %}
+
+
+<div class="wrapper-home-subtitle">
+    <h2 class="home-subtitle">Motor de Portão</h2>
+</div>
+
+{% set motor = Products({
+    'filter': 'featured',
+    'limit': 8,
+    'order': {'quantity_sold': 'desc'},
+    'categories': 748
+}) %}
+
+{% element 'snippets/showcase' {
+    "products": motor
+} %}
+
+
+<div class="wrapper-home-subtitle">
+    <h2 class="home-subtitle">Cerca Elétrica</h2>
+</div>
+
+{% set cerca = Products({
+    'filter': 'featured',
+    'limit': 8,
+    'order': {'quantity_sold': 'desc'},
+    'categories': 820
+}) %}
+
+{% element 'snippets/showcase' {
+    "products": cerca
+} %}
+
+
+
+{% element 'snippets/message-cookie' %}

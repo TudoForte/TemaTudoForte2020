@@ -1,0 +1,73 @@
+/**
+ * Catalog Pagination
+ */
+
+ .board{
+   margin-left: 0;
+   margin-right: 0;
+ 
+ }
+
+ .catalogo-pagination{
+   height: 30px;
+   line-height: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .btn-pagina-anterior{
+  display: none;
+ }
+
+ .btn-ultima-pagina{
+   display: none;
+ }
+ 
+ .catalogo-display{
+  display: none;
+ }
+
+ .btn-proxima-pagina{
+  display: none;
+ }
+
+ .separador-paginas{
+  display: none;
+ }
+
+ .btns-paginator{
+  // border: 1px solid $color-red;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left:3px;
+ }
+
+ .btns-paginator > a{
+  color: $color-black;
+  text-decoration: none;
+ }
+ 
+ .selectedPg{
+  border: 1px solid $color-blue;
+  background: $color-blue;
+  color: $color-white;
+ }
+
+ .btns-paginator{
+   position: relative;
+ }
+
+ .btn-primeira-pagina > a {
+  // text-indent: -9999px;
+  // color: #fff
+  display: none;
+ }
+
+//  .btn-primeira-pagina:before{
+//   font-family: "FontAwesome";
+//   font-weight: 900;
+//   content: "\f104";
+//   position: absolute;
+//   left: 30px;
+//  }

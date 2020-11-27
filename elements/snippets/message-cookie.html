@@ -1,0 +1,25 @@
+<div class="container-message-cookie">
+
+  <div class="container-message-cookie-text">
+    <p class="message-cookie-text">
+      Cookies: a gente guarda estatísticas de visitas para melhorar sua experiência de navegação, ao continuar navegando, você concorda com a nossa 
+      <a href="https://www.tudoforte.com.br/privacidade-e-seguranca" target="_blank" rel="noreferrer" title="Política de Privacidade"> política de privacidade.</a>
+    </p>
+  </div>
+  
+  <div class="message-cookie-button">
+    <a onclick="removeCookie()" title="Continuar e Fechar">Continuar e Fechar</a>
+  </div>
+
+</div>
+
+<script>
+  function removeCookie(){
+      let cookie = document.getElementsByClassName('container-message-cookie')[0].style.display = 'none';
+      localStorage.setItem('cookie', true);
+  }
+
+  if(localStorage.getItem("cookie") !== null){
+      removeCookie()
+  }  
+</script>

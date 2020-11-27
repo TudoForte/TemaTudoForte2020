@@ -1,0 +1,169 @@
+<style>
+  
+    .wrapper-productShareStore {
+      width: 100%;
+      max-width: 465px;
+      margin-top: 20px;
+    }
+
+    .productShareStore-content {
+    }
+
+    .productShareStore-title {
+      margin-bottom: 10px;
+      text-transform: initial;
+      font-size: 14px;
+    }
+
+    .productShareStore-title-button-active:hover{
+      text-decoration: underline;
+    }
+
+    .wrapper-productShareStore-input-button{
+      display: none;
+      opacity: 0;
+    }
+
+    .productShareStore-input{
+      width: 35%;
+      height: 35px;
+      text-align: center;
+      margin-right: 10px;
+    }
+
+    .productShareStore-button-facebook{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25%;
+      height: 35px;
+      text-decoration: none;
+      color: #0047d9;
+      border: 1px solid #0047d9;
+      margin-right: 10px;
+    }
+
+    .productShareStore-button-facebook:hover{
+      color: #fff;
+      background-color: #0047d9;
+    }
+
+    .productShareStore-button-whatsapp{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25%;
+      height: 35px;
+      text-decoration: none;
+      color: #00C500;
+      border: 1px solid #00C500;
+      margin-right: 10px;
+    }
+
+    .productShareStore-button-whatsapp:hover{
+      color: #fff;
+      background-color: #00C500;
+    }
+
+    .productShareStore-button-facebook > i{
+      margin-right: 10px;
+    }
+
+    .productShareStore-button-whatsapp > i{
+      margin-right: 10px;
+    }
+
+
+    @media(max-width: 600px){
+
+      .productShareStore-title {
+        margin-bottom: 10px;
+        text-transform: initial;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .productShareStore-input{
+        width: 60%;
+      }
+
+      .productShareStore-button-facebook{
+        width: 20%;
+        font-size: 20px;
+      }
+
+      .productShareStore-button-facebook > i{
+        margin-right: 0;
+      }
+
+      .productShareStore-button-facebook > span{
+        display: none;
+      }
+
+      .productShareStore-button-whatsapp{
+        width: 20%;
+        margin-right: 0;
+        font-size: 20px;
+      }
+
+      .productShareStore-button-whatsapp > i{
+        margin-right: 0;
+      }
+
+      .productShareStore-button-whatsapp > span{
+        display: none;
+      }
+
+    }
+
+
+</style>
+
+
+
+<div class="wrapper-productShareStore">
+    
+    <h3 class="productShareStore-title">
+      Você é Parceiro Tudo Forte? <a class="productShareStore-title-button-active" onclick="openSharedProduct()" title="Clique e Compartilhe Este Produto">Clique e Compartilhe Este Produto</a>
+    </h3>
+    
+    <div id="wrapperProductShareStore" class="wrapper-productShareStore-input-button">
+      <input id="codeSharePartnerProduct" class="productShareStore-input" type="text" placeholder="Insira seu Código Aqui" />
+      <a id="buttonShareProductFacebook" class="productShareStore-button-facebook" target="_blank" rel="noreferrer" title="Compartilhar para Facebook" onclick="checkTextFieldStore(document.getElementById('codeSharePartnerProduct'))"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+      <a id="buttonShareProductWhatsApp" class="productShareStore-button-whatsapp" target="_blank" rel="noreferrer" title="Compartilhar para WhatsApp" onclick="checkTextFieldStore(document.getElementById('codeSharePartnerProduct'))"><i class="fa fa-whatsapp"></i> <span>WhatsApp</span></a>  
+    </div>
+   
+</div>
+  
+<script>
+ 
+    const inputSharedProduct = document.getElementById('codeSharePartnerProduct');
+    inputSharedProduct.addEventListener('change', updateValueStoreProduct);
+
+    function checkTextFieldStore(field) {
+      if (field.value == '') {
+        document.getElementById('codeSharePartnerProduct').style.borderColor = 'red';
+        document.getElementById('codeSharePartnerProduct').style.borderWidth = '1px';
+      }
+    }
+
+    function updateValueStoreProduct(e) {
+      let codigoSharedProduct = e.target.value;
+
+      let buttonFacebookSharedProduct = document.getElementById('buttonShareProductFacebook');
+      buttonFacebookSharedProduct.href = `https://facebook.com/sharer/sharer.php?u=${window.location.href}?parceiro=${codigoSharedProduct}`;
+
+      let buttonWhatsApp = document.getElementById('buttonShareProductWhatsApp');
+      buttonWhatsApp.href = `https://api.whatsapp.com/send?text=${window.location.href}?parceiro=${codigoSharedProduct}`;
+    }
+    
+    function openSharedProduct(){
+      let element = document.getElementById('wrapperProductShareStore');
+      element.style.opacity = '1';
+      element.style.display = 'flex'
+    }
+
+</script>

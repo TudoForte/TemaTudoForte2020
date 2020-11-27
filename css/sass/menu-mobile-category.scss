@@ -1,0 +1,37 @@
+.wrapper-menu-mobile-category{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu-mobile-category-item{
+  width: 32%;
+  background-color: $second-color;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  font-size: 10px;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  color: $color-white;
+  padding: 10px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.menu-mobile-category-item:hover{
+  color: $color-white;
+}
+
+
+
+@media screen and (max-width: 425px) {
+  .navbar-icon{
+    display: block;
+    width: 30px;
+    height: 40px;
+    margin-right: 0px;
+  }
+}

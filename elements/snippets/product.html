@@ -1,0 +1,38 @@
+<div class="wrapper-product">
+
+    
+    <a class="product-link" href="{{ product.link }}" title="Produto">
+
+        <div class="wrapper-image-rating">
+            <div class="product-image">
+                <img class="swiper-lazy" src="{{ product.images[0].large }}" alt="{{ product.name }}" title="{{ product.name }}" />
+            </div>
+        </div>
+
+        <div class="wrapper-name-price">
+            <div id='rating-{{ product.id }}' class="wrapper-rating"></div>
+            
+            <div class="product-name">
+                <h3>{{ product.name }}</h3>
+            </div>
+
+            {% element 'snippets/price' {"product": product} %}
+        </div>
+    </a>
+
+    <div class="wrapper-add-cart" >
+
+        <div class="number-input">
+            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" >-</button>
+            <input class="quantity" id="quant" min="1" name="quantity" value="1" type="number">
+            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
+        </div>
+
+        <button class="product-add-cart-button" type="submit" data-app="product.buy-button" data-product="{{ product.id }}" onclick="openSidebar()">
+            <img class="product-add-cart-image" src="{{ asset('img/cart.svg') }}" alt="Adicionar ao Carrinho" title="Adicionar ao Carrinho">
+        </button>
+
+    </div>
+
+</div>
+

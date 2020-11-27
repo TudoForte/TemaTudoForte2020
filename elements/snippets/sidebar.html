@@ -1,0 +1,30 @@
+<div id="sidebarCart" class="sidebar" aria-label="Cart" aria-hidden="true">
+  <div class="sidebar-content">
+
+    <div class="sidebar-header">
+      <img class="sidebar-header-cart" src="{{ asset('img/cart.svg') }}" alt="Icone Carrinho" title="Icone Carrinho">
+      <button class="sidebar-header-share" onclick="openModalSharedCart()">Compartilhar Orçamento <i class="fa fa-share-alt"></i></button>
+      <button class="sidebar-header-close"  onclick="closeSidebar()"><i class="fa fa-times-circle"></i></button>
+    </div>
+
+    <div class="sidebar-body">
+      <ul id="sidebar-cart">
+        
+      </ul>
+    </div>
+
+    <div class="sidebar-footer">
+     
+      <p class="sidebar-footer-label">Subtotal a prazo <strong class="sidebar-footer-subtotal">R$<span id="priceSubtotal"></span></strong></p>
+      
+      <div class="sidebar-footer-wrapper-button">
+        <button class="sidebar-footer-button" onclick="closeSidebar()">Comprar Mais</button>
+        <a class="sidebar-footer-button -checkout" href="{{ links.cart }}" alt="Finalizar Pedido" title="Finalizar Pedido">Finalizar Pedido</a>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+

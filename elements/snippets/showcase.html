@@ -1,0 +1,27 @@
+{% if products|length > 0 %}
+
+
+        <!-- Slider main container -->
+        <div class="swiper-container product-slider product-slider-home">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper ">
+                <!-- Slides col-2  -->
+                {% for product in products %}
+                  
+                    <div class="swiper-slide product">
+                        {% element 'snippets/product' {"product": product} %}
+                    </div>  
+                {% endfor %}    
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination pagination-product-home"></div>
+            
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev -home"></div>
+            <div class="swiper-button-next -home"></div>
+        </div>
+       
+        
+
+{% endif %}

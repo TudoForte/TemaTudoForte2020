@@ -1,0 +1,20 @@
+/**
+ * Banners
+ */
+
+//  BANNER HOME PRINCIPAL
+.wrapper-banner-brands {
+  box-shadow: rgb(227, 233, 243) 0px 2px 6px 0px;
+  display: none;
+}
+
+.banner-brands-item {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .banner-brands-image {
+    width: 150px;
+  }
+}

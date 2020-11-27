@@ -1,0 +1,280 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	// border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*
+ * Tray Commerce Reset
+ */
+
+// bootstrap .container conflict
+.page-content .container {
+    width: auto;
+}
+
+// hiding elements
+.bottom,
+.topBorder,
+.leftCorner2,
+.bLeft,
+.bRight,
+#miniad,
+.stripe {
+    display: none;
+}
+
+// cleaning elements
+.container,
+.container2,
+.container3,
+#title,
+#esquerda,
+#direita,
+#visualAbas,
+#visualAbas li,
+#visualAbas li a,
+#foto_p,
+#colFotos,
+#colVideo,
+#col3D,
+#ProdAbas,
+.prodBox,
+#ProdAbas li,
+#ProdAbas .aberta,
+#ProdAbas li a,
+#ProdAbas .aberta a,
+.visitados {
+    background: none;
+    border: 0;
+}
+
+// fixing display: table
+#visualAbas {
+    display: block;
+    width: auto;
+}
+
+#visualAbas li{
+    display: inline-block;
+    float: none;
+}
+
+#colFotos,
+#colVideo,
+#col3D{
+    display: block;
+    width: auto;
+}
+
+#foto_p{
+    width: auto;
+}
+
+#ProdAbas {
+    display: block;
+    width: auto;
+}
+
+
+#botoes{
+    float: unset;
+    width: unset; 
+    max-height: unset;
+    text-align: unset;
+    padding: 0;
+}
+
+#title{
+    position: unset;
+    text-align: left;
+    padding: 0;
+    border-top: 0;
+}
+
+#cepbox {
+    border-top: 0;
+    border-bottom: 0;
+    padding: 0; 
+    margin: 0; 
+    text-align: unset; 
+    font-size: unset;
+    font-weight: unset; 
+}
+
+.cepbox-text{
+    display: none;
+}
+
+
+// VITRINES SMARTHINT
+.smarthint {
+    display: none !important;
+}
+
+// REMOVER SELO OPINIAO VERIFICADA
+#netreviewsWidgetNum3628widget10av{
+    display: none !important;
+}
+
+#ProdBlock{
+    // display: none;
+}
+
+#relacionados, #Relacionados{
+    display: none
+}
+
+#div_erro > center{
+    display: none;
+}
+
+.blocoAlerta{
+    background-image: unset;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+#CadastroAbas{
+    border: unset;
+    background-image: unset;
+    // border-bottom: 1px solid gray;
+}
+
+#CadastroAbas li {
+    background-image: unset;
+}
+
+#CadastroAbas a {
+    background-image: unset;
+}
+
+
+.image{
+    display: none;
+}
+
+
+#frm2 > div:nth-child(2) > fieldset:nth-child(17) {
+    display: none;
+}
+
+// #frm2 > div:nth-child(2) > fieldset:nth-child(18) {
+//     background-color: red;
+// }
+
+.txt-dados-entrega{
+    display: none;
+}
+
+#endereco_cobranca_diferente{
+    display: none;
+}
+
+.dif{
+    display: none;
+}
+
+.container3{
+    // display: none;
+}
+
+.carrinho-tabs{
+    display: none;
+}
+
+.board > br {
+    display: none;
+}
+
+.page-search #Vitrine input[type="image"]{
+    display: none;
+}
+
+.select{
+    font-weight: normal;
+}
+
+.infobox.danger{
+    display: none;
+}
+
+.txt-dados-pessoais, .txt-dados-loja{
+    display: none;
+}
+
+
+.board > p {
+    display: none;
+  }
+  
+  .board > h3 {
+    display: none;
+  }
+  
+  .contato-telefones{
+    display: none;
+  }
+  
+  .email-texto{
+    display: none;
+  }
+  
+  .Mapa{
+    display: none;
+  }
+  
+  .board:after{
+    display: none;
+  }
+  
+  .table{
+    display: unset;
+  }
+
+

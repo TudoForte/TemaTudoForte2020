@@ -1,0 +1,99 @@
+<style type="text/css">
+
+  .board{
+    margin: 0px;
+    }
+
+    .board_htm {
+      position: relative;
+      margin: 0;
+      clear: both;
+      display: table;
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+  
+  .wrapper-header-partner {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: #0047d9;
+    color: #fff;
+  }
+
+  .wrapper-header-partner-title {
+    margin: 0;
+    font-size: 32px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .partner-input{
+    width: 100%;
+    display: block;
+    border: 0;
+    margin-top: 4px;
+    height: 52px;
+    background-color: #f5f7f9;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .section-partner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+  }
+
+  .partner-label {
+    margin-bottom: 15px
+  }
+
+  @media(max-width: 600px) {
+
+    .wrapper-header-partner {
+      height: auto;
+      margin-top: 20px;
+    }
+
+    .wrapper-header-partner-title {
+      font-size: 16px !important;
+      line-height: 20px;
+      text-align: center;
+      padding: 10px;
+    }
+
+  }
+</style>
+
+
+<div class="wrapper-header-partner">
+  <h1 class="wrapper-header-partner-title">Parceiro Tudo Forte</h1>
+</div>
+
+<div class="section-partner">
+  <form action="https://www.tudoforte.com.br/loja/afiliados.php?loja=332274&amp;login=1&amp;subafiliado=" method="post" name="form" onsubmit="return validate(this);" target="_parent">      
+   
+       
+          <label for="email_cadastro" class="partner-label">Login
+            <input class="partner-input" name="parceiro" size="30" type="text" value="" />
+          </label>
+    
+          <label for="email_cadastro" class="partner-label">Senha
+            <input class="partner-input" name="senha" size="30" type="password" />
+          </label>
+  
+          <button type="submit" class="botao-commerce partner-button" alt="Efetuar login" title="Efetuar login">ENVIAR</button>
+ 
+    </form>    
+</div>
+
+

@@ -1,0 +1,45 @@
+<div class="product-price">
+  {% if product.available %}
+    {% if product.stock > 0 %}
+    
+      {% if product.upon_request %}
+        <p>Produto Sob Consulta</p>
+      {% else %}
+
+        {% set price = product.price_offer > 0 ? product.price_offer : product.price %}
+            
+                
+            {% if product.price > 10 %}
+
+                {% for payment in product.payment_option_details %}
+                 
+                  {% if payment.plots == 1 %}
+                    <span class="wrapper-price-cash"> <b class="price-cash">{{ settings.currency }} {{ payment.value|currency }}</b> À Vista <strong>7% de Desconto</strong></span><br class="break"/>
+                  {% endif %}
+
+                  {% if payment.plots == 12 %}
+                  <span>ou <b class="price-installment">{{ payment.plots }}x</b> de <b class="price-installment">{{ settings.currency }} {{ payment.value|currency }}</b> Sem Juros</span>
+                  {% endif %}
+
+                {% endfor %}
+            
+            {% else %}
+            
+              <span class="wrapper-price-cash"> <b class="price-cash">{{ settings.currency }}  {{product.price |currency}} </b></span>
+            
+            {% endif %} 
+
+        {% endif %}
+
+    {% else %}
+      <p>Esgotado!</p>
+    {% endif %}
+
+    {% else %}
+      <p>Produto Indisponível</p>
+    {% endif %}
+</div>
+
+
+
+

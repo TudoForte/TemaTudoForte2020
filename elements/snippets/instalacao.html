@@ -1,0 +1,105 @@
+<style>
+  .wrapper-installation{
+    display: flex;
+    max-width: 465px;
+    font-size: 12px;
+    background-color: #e0edf3;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    line-height: 20px;
+    align-items: center;
+    position: relative;
+  }
+
+  .installation-title{
+    font-weight: 800;
+    text-transform: initial;
+  }
+
+  .installation-price-parceled{
+    font-weight: 800;
+  }
+
+
+  @media screen and (max-width: 600px) {
+
+    .wrapper-installation{
+      display: inline-table;
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .installation-title{
+      font-size: 18px;
+    }
+
+    .wrapper-installation-title{
+      margin-left: 30px;
+    }
+
+    .wrapper-installation-price{
+      margin-left: 30px;
+      margin-top: 10px;
+      display: flex;
+      align-items: baseline;
+    }
+
+    .installation-price-parceled{
+      font-size: 18px;
+      margin-right: 5px;
+    }
+
+    .installation-input{
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+}
+
+
+
+  @media screen and (max-width: 320px) {
+
+    .wrapper-installation{
+      font-size: 10px;
+      line-height: 16px;
+    }
+
+    .installation-title{
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .wrapper-installation-title{
+      margin-left: 30px;
+    }
+
+    .installation-price-parceled{
+      font-size: 14px;
+      margin-right: 5px;
+    }
+
+  }
+
+
+</style>
+
+<div class="wrapper-installation">
+    <input class="installation-input" type="checkbox" id="installation" name="installation" onclick="changeInstallation()">
+
+    <div class="wrapper-installation-title">
+      <h3 class="installation-title">Aproveite e Contrate</h3>
+      <p>Instalação de TV Acima de 49 até 70 polegadas</p>
+    </div>
+
+    <div class="wrapper-installation-price">
+      <p class="installation-price-parceled">12x de <span>R$ 114,50</span></p>
+      <p>Valor Total: <span>R$ 299,00</span></p>
+    </div>
+</div>

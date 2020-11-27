@@ -1,0 +1,5 @@
+{
+  "grunt.autoDetect": "off",
+  "gulp.autoDetect": "off",
+  "github.gitAuthentication": false
+}

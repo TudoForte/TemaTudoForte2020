@@ -1,0 +1,45 @@
+/**
+ * Banners
+ */
+
+//  BANNER HOME PRINCIPAL
+
+.wrapper-banner-home{   
+    background-color: $color-black;
+}
+
+ .swiper-container {
+    width: 100%;
+    height: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+.pagination-product-home{
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    .banner-home{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 425px) {
+    
+    .pagination-product-home{
+        display: block;
+    }
+
+    
+    .swiper-container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+}

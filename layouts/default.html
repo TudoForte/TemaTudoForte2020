@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-br" data-store="{{ store.id }}" class="page-{{ pages.current }}">
+
+<head>
+    {{ html.charset() }}
+    {{ tray.meta }}
+    <!-- [if IE]<meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ tray.styles }}
+    <link rel="stylesheet" href="{{ asset('css/bootstrap/font-awesome.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap/bootstrap-grid.min.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="{{ asset('css/theme.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
+
+    {{ tray.scripts }}
+    {{ tray.analytics }}
+    {{ googleTagManager.header(pages.current, tagManagerData) }}
+
+
+</head>
+
+<body>
+    {{ googleTagManager.top(pages.current, tagManagerData) }}
+
+    {% if utils.is_mobile %}
+    {% element 'header' %}
+    {% else %}
+    {% element 'header' %}
+    {% endif %}
+
+    {% if pages.current == 'home' %}
+
+    {% if banner.home %}
+
+    <div class="container-full">
+        <div class="wrapper-banner-home">
+
+
+            <!-- Slider main container -->
+            <div class="swiper-container banner-home">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    {% for slide in banners.home.slides %}
+                    <div class="swiper-slide">
+                        <a href="{{ slide.link }}">
+                            <img rel="prerender" src="{{ slide.image }}" alt="{{ slide.label}}">
+                        </a>
+                    </div>
+                    {% endfor %}
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+    
+    {% endif %}
+
+    {% endif %}
+
+        </div>
+    </div>
+
+    {% if pages.current == 'home' %}
+    {% element 'snippets/info' %}
+    {% endif %}
+
+    <div class="container-full">
+        <div class="content">
+            <section class="page-content product-wrapper">
+                {{ content_for_layout }}
+            </section>
+        </div>
+    </div>
+
+    {% element 'footer' %}
+
+    {{ googleTagManager.bottom(pages.current, tagManagerData) }}
+
+    {{ html.script('dist/application.min.js?' ~ utils.assets_version) }}
+
+    {% element 'snippets/pageview' %}
+
+
+    <script rel="preload" as="script" src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script rel="preload" as="script" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script rel="preload" as="script" src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script rel="preload" as="script" src="{{ asset('js/theme.min.js') }}"></script>
+
+
+    {% element 'snippets/sharedCart' %}
+
+    <div class="sidebar-backdrop" onclick="closeSidebar()" id="sidebar-backdrop"></div>
+
+</body>
+
+</html>

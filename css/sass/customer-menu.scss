@@ -1,0 +1,32 @@
+.modal-custom{
+  position: absolute;
+  width: 200px;
+  top: 15px;
+  left: 0;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: rgb(227, 233, 243) 0px 0px 3px 0;
+
+  opacity: 0;
+  z-index: -3;
+
+  .modal-custom-list{
+    padding: 0 10px 10px 10px;
+  }
+
+  .modal-custom-list-item{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $color-gray-d7
+  }
+
+  .modal-custom-list-item:last-child{
+    border-bottom: 0;
+  }
+
+  .modal-custom-image{
+    padding-top: 10px;
+    width: 30px;
+  }
+
+}

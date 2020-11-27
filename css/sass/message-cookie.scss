@@ -1,0 +1,80 @@
+
+  .container-message-cookie {
+      display: flex;
+      width: 100%;
+      height: 70px;
+      background-color: #545454e6;
+      justify-content: space-evenly;
+      align-items: center;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: justify;
+      z-index: 5;
+  }
+
+  .container-message-cookie-text {
+      width: 50%;
+      justify-content: center;
+      font-weight: 500;
+  }
+
+  .message-cookie-text {
+      color: #fff;
+  }
+
+  .message-cookie-text > a{
+      color: #F0EA3C;
+  }
+
+  .message-cookie-button {
+      color: #fff;
+      cursor: pointer;
+      background-color: #00C500;
+      padding: 10px;
+  }
+
+  .message-cookie-button > a {
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px
+  }
+
+  @media(max-width: 600px){
+      .container-message-cookie {  
+          height: 120px;
+          font-size: 11px;
+          flex-direction: column;
+      }
+
+      .container-message-cookie-text {
+          width: 100%;
+          padding: 10px;
+          line-height: 12px;
+      }
+
+      .message-cookie-text {
+          color: #fff;
+          line-height: 16px;
+      }
+  }
+
+  @media(max-width: 425px){
+    .container-message-cookie{
+      height: 140px;
+    }
+
+
+    .message-cookie-button {
+      width: 95%;
+      /* margin-bottom: 5px; */
+      text-align: center;
+    }
+
+    .message-cookie-button > a{
+      font-size: 14px;
+    }
+  }
+

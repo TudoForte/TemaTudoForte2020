@@ -1,0 +1,41 @@
+.wrapper-help-center {
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 250px;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: #e3e9f3 0px 0px 3px 0;
+  border-radius: 5px;
+  // margin-top: 5px;
+  left: -30px;
+
+  opacity: 0;
+  z-index: -55;
+}
+
+.wrapper-help-center-list{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.help-center-list-item{
+  line-height: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.help-center-list-item > a {
+  text-decoration: none;
+}
+
+.help-center-list-item.-destaque{
+  border-top: 1px solid $color-gray-ab;
+  border-bottom: 1px solid $color-gray-ab;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}

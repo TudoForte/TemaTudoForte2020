@@ -1,0 +1,57 @@
+<div class="vspace-sm wrapper-breadcrumb">
+    {% element 'snippets/breadcrumb' %}
+</div>
+
+{% if products|length > 0 %}
+
+    {% if not utils.is_mobile %}
+    <div class="vspace-sm wrapper-catalogo-form-filtros">
+        {% element 'snippets/filter' {
+            'brands': category.brands
+        } %}
+    </div>
+    {% endif %}
+
+    {% element 'snippets/smartfilter-mobile-button-select' %}
+   
+    <div class="vspace-sm">
+        
+        <div class="row">
+
+            <div class="col-xs-6 col-md-3 wrapper-sidebar-left">
+                {% if pages.current == 'search' %}
+                {% element 'sidebar_left' %}
+                {% endif %}
+            </div>
+        
+
+            <div class="col-xs-6 col-md-9 wrapper-product-catalog">
+                {% element 'snippets/showcase_catalog' {
+                    "products": products
+                } %}
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="vspace-sm">
+        {% element 'snippets/pagination' %}
+    </div>
+
+{% else %}
+
+    <div class="row">
+        
+        <div class="col-12 wrapper-product-catalog">
+            <p>Nenhum produto encontrado nessa categoria.</p>
+        </div>
+        
+    </div>
+   
+
+{% endif %}
+
+<div class="wrapper-sidebar-left-mobile">
+    {% element 'snippets/smartfilter-mobile' %}
+</div>

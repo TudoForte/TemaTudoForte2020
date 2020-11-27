@@ -1,0 +1,6 @@
+<h1 class="product-title">{{ product.name }}</h1>
+  <ul class="wrapper-product-details">
+      <li class="product-details"><strong>Código: </strong>{{ product.id }}</li>
+      <li class="product-details"><a href="busca.php?loja=332274&avancada=1&buscamarca={{ product.brand }}" title="{{ product.brand }}"><strong>Marca: </strong>{{ product.brand }}</a></li>
+      <li class="product-details"><a href="{{ pages.product }}#descricao" title="Ver Descrição Completa">Ver Descrição Completa</a></li>
+  </ul>

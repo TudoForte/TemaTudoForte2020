@@ -1,0 +1,65 @@
+/**
+ * Frete
+ */
+
+  .tablePage{
+    border: 0;
+    margin-bottom: 10px  
+  }
+
+  .tablePage th {
+    background: unset;
+    border: 0;
+  }
+
+  .tablePage td {
+    font-size: 11px; 
+    position: relative;
+    border: 0;
+    padding: unset;
+    text-align: center;
+  }
+
+ .page-simula-frete {
+    margin-top: 10px;
+    min-width: 250px;
+    max-width: 430px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: arial;
+    font-size: 12px;
+  }
+
+  .page-simula-frete > table:first-child{
+    display: none;
+  }
+
+
+  .page-simula-frete th,
+  .page-simula-frete td {
+    border-right: #999999 solid 1px;
+    font-size: 12px;
+    padding: 5px;
+    line-height: 15px;
+    vertical-align: middle;
+  }
+
+  .page-simula-frete td:last-child,
+  th:last-child {
+    border-right: 0;
+  }
+
+  .page-simula-frete tbody>tr:nth-child(odd)>td,
+  .page-simula-frete tbody>tr:nth-child(odd)>th {
+    background-color: #f8f8f8;
+  }
+
+
+  @media(max-width: 320px) {
+
+    .page-simula-frete th,
+    .page-simula-frete td {
+      width: 80px;
+    }
+
+  }

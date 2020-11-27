@@ -1,0 +1,59 @@
+<div class="container-full">
+  <div class="wrapper-payment">
+    <div class="col-sm-6 wrapper-payment-credit">
+
+      <h4 class="payment-credit-title">
+        <img class="payment-credit-image" src="{{ asset('img/icon-credit.svg') }}" alt="Cartão de Crédito" title="Cartão de Crédito"/>
+        Parcelamento no Cartão
+      </h4>
+
+      <div class="payment-credit-flags">
+        {% for payment in paymentMethods.credit %}
+        <img src="{{ payment.thumbnail.url }}" alt="{{ payment.display_name }}" title="{{ payment.display_name }}" />
+        {% endfor %}
+      </div>
+
+      <ul class="wrapper-credit-list">
+
+      </ul>
+
+    </div>
+
+    <div class="col-sm-6 wrapper-payment-slip-transfer">
+      <div class="wrapper-payment-bank-slip">
+
+        <h4 class="payment-bank-slip-title">
+          <img class="payment-bank-slip-image" src="{{ asset('img/icon-bank-slip.svg') }}" alt="Boleto Bancário" title="Boleto Bancário" />
+
+          <span>
+            <strong class="bank-slip-name">Boleto</strong> <strong class="bank-slip-value"></strong> <span class="list-item-featured">C/ Desconto</span>
+          </span>
+        </h4>
+
+        <p class="payment-bank-slip-text">
+          {{ Translation('ag_texto_boleto') }}
+        </p>
+        
+      </div>
+
+
+      <div class="wrapper-payment-bank-transfer">
+
+        <h4 class="payment-bank-transfer-title">
+          <img class="payment-bank-transfer-image" src="{{ asset('img/icon-bank-transfer.svg') }}"
+            alt="Transferência Bancária" title="Transferência Bancária" />
+
+          <span>
+            Transferência <strong class="bank-transfer-value"></strong>
+          </span>
+        </h4>
+
+        <p class="payment-bank-transfer-text">
+          {{ Translation('ag_texto_transferência') }}
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+</div>

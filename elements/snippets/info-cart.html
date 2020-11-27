@@ -1,0 +1,66 @@
+<style>
+    .wrapper-info-cart{
+      display: flex;
+      flex-direction: column; 
+      justify-content: center;
+      font-size: 14px;
+      border: 1px solid #d6e5f2;
+      width: 465px;
+      padding: 15px;
+      overflow-y: auto;
+      margin-top: 20px;
+    }
+
+    .info-cart-item{
+      margin-bottom: 5px;
+      line-height: 1.5;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .info-cart-item-image{
+      margin-right: 5px;
+    }
+
+    .info-cart-item-text-destaque > a{
+      color: #0033c6;
+      text-decoration: none; 
+    }
+
+    .info-cart-item-text-destaque > a:hover{
+      text-decoration: underline; 
+    }
+
+
+    @media screen and (max-width: 600px) {
+      .wrapper-info-cart{
+        width: 100%;
+      }
+    }
+</style>
+
+
+<ul class="wrapper-info-cart">
+  <li class="info-cart-item">
+    <img rel="prerender" class="info-cart-item-image" src="{{ asset('img/icon_back.svg') }}" alt="Icone Devolução Grátis" title="Icone Devolução Grátis"/>
+    <span>
+      <b class="info-cart-item-text-destaque" >
+        <a id="info-cart-message-button" title="Garantia Troca e Devolução" target="_blank" rel="noreferrer">
+          Devolução Grátis.
+        </a>
+      </b> Você tem 7 Dias a Partir da Data de Recebimento.</span>
+  </li>
+  <li class="info-cart-item">
+    <img rel="prerender" class="info-cart-item-image" src="{{ asset('img/icon_warranty.svg') }}" alt="Icone Ajuda de Especialistas" title="Icone Ajuda de Especialistas"/>
+    <span>
+      <b class="info-cart-item-text-destaque">
+        <a id="info-cart-message-fale-analista-button" title="Fale com um Analista" target="_blank" rel="noreferrer">
+          Ajuda de Especialista</a>
+      </b>
+      Tire Suas Dúvidas Sobre Produto ou Instalação.</span>
+  </li>
+</ul>
+
+
+{% element 'snippets/info-cart-message' %}
+{% element 'snippets/info-cart-message-fale-analista' %}

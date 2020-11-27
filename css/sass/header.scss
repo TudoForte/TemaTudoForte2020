@@ -1,0 +1,270 @@
+/**
+ * Header
+ */
+
+ .wrapper-header{
+  -webkit-box-shadow: 0px 15px 35px -18px grey;
+  -moz-box-shadow: 0px 15px 35px -18px grey;
+  box-shadow: 0px 15px 35px -18px grey;
+
+  // position: -webkit-sticky;
+  // position: sticky;
+
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+  top: 0;
+
+  .fa-bars{
+    position: absolute;
+    top: 0px;
+    font-size: 24px;
+    z-index: 3;
+    width: 45px;
+    height: 42px;
+    padding-left: 15px;
+    padding-top: 12px;
+  }
+
+  .customer-cart-link-mobile{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 3;
+    width: 55px;
+    height: 35px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+ 
+.header {
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 1366px;
+  margin: 0 auto;
+  font-size: 12px;
+
+  .wrapper-menu-top {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+  }
+
+  .menu-top-item {
+    position: relative;
+    height: 100%;
+    padding-top: 5px;
+
+    &:hover .wrapper-budget {
+      display: flex;
+      opacity: 1;
+      z-index: 3;
+    }
+
+    &:hover .wrapper-telesales {
+      display: flex;
+      opacity: 1;
+      z-index: 3;
+    }
+
+    &:hover .wrapper-customer-review {
+      display: flex;
+      opacity: 1;
+      z-index: 3;
+    }
+
+    &:hover .wrapper-whoweare {
+      display: flex;
+      opacity: 1;
+      z-index: 3;
+    }
+
+    &:hover .wrapper-help-center {
+      display: flex;
+      opacity: 1;
+      z-index: 3;
+    }
+
+    &:hover .wrapper-share-store {
+      display: flex;
+      opacity: 1;
+      z-index: 3;
+    }
+  }
+
+  .menu-top-item > a{
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  .wrapper-header-brand-search-customer {
+    height: 65px;
+  }
+
+  .wrapper-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    .brand-logo{
+      text-indent: -999999px;
+      height: 0px;
+      width: 0px;
+    }
+
+    img {
+      width: 200px;
+      z-index: -2;
+    }
+  }
+
+  .header-customer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    position: relative;
+
+    &:hover .modal-custom {
+      opacity: 1;
+      z-index: 3;
+    }
+
+    .wrapper-customer-user {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .header-customer-user-logged {
+      text-align: center;
+    }
+
+    .header-customer-user-logged > span {
+      font-weight: 600;
+    }
+
+    .customer-user-image {
+      width: 30px;
+      height: 30px;
+      margin-right: 15px;
+      // z-index: -2;
+    }
+
+    .customer-user-link-sign {
+      margin-left: 5px;
+    }
+
+    .wrapper-customer-cart {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+    }
+
+    .customer-cart-link {
+      display: flex;
+      justify-content: center;
+      align-items: end;
+    }
+
+    .customer-cart-image {
+      width: 30px;
+      height: 30px;
+      margin-left: 15px;
+      // z-index: -2;
+    }
+
+    .customer-cart-value{
+      background-color: $third-color;
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      color: $color-white;
+      text-align: center;
+      line-height: 15px;
+      font-size: 9px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    .wrapper-menu-top {
+      display: none;
+    }
+
+    .header-customer {
+      .customer-user-image {
+        display: none;
+      }
+
+      .wrapper-customer-user {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    position: relative;
+    .header-customer {
+      .wrapper-customer-user {
+        display: none;
+      }
+    }
+  }
+
+  .wrapper-header{
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+    box-shadow: unset;
+  
+    position: relative;
+  
+    width: unset;
+    z-index: 5;
+    background-color: $color-white;
+    top: 0px
+  }
+  
+}
+
+@media screen and (max-width: 580px) {
+  .header {
+    .header-customer {
+      display: none;
+    }
+
+    .wrapper-form{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      height: unset;
+    }
+
+    .wrapper-header-brand-search-customer {
+      height: unset;
+    }
+
+    .wrapper-brand {
+      
+      img {
+        width: 150px;
+      }
+    }
+
+
+  } 
+}

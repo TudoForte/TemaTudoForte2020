@@ -1,0 +1,34 @@
+{
+  "name": "tudo-forte",
+  "homepage": "https://www.tudoforte.com.br",
+  "authors": [
+    "Raphael Freire <raphaelmachadofreire@gmail.com>"
+  ],
+  "description": "Template Tudo Forte plataforma de e-commerce Tray",
+  "keywords": [
+    "tray",
+    "temas",
+    "opencode",
+    "ecommerce",
+    "design",
+    "frontend",
+    "ux",
+    "tudoforte"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
+    "owl.carousel": "^2.3.4"
+  },
+  "scripts": {
+    "compile:sass": "sass css/sass/theme.min.scss css/theme.min.css"
+  }
+}

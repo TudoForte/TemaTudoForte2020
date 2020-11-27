@@ -1,0 +1,59 @@
+
+<div class="wrapper-share-store">
+  <div class="share-store-content">
+    
+    <h3 class="share-store-title">Parceiro Tudo Forte</h3>
+    
+    <p class="share-store-text">
+      Compartilhe a Loja com Clientes e Amigos
+    </p>
+    
+    <input id="codeSharePartner" class="share-store-input" type="number" placeholder="Insira seu Código Aqui" />
+
+    <a id="buttonShareFacebook" class="share-store-button-facebook" target="_blank" rel="noreferrer" title="Compartilhar para Facebook" onclick="checkTextFieldStore(document.getElementById('codeSharePartner'))"><i class="fa fa-facebook"></i> Facebook</a>
+    <a id="buttonShareWhatsApp" class="share-store-button-whatsapp" target="_blank" rel="noreferrer" title="Compartilhar para WhatsApp" onclick="checkTextFieldStore(document.getElementById('codeSharePartner'))"><i class="fa fa-whatsapp"></i> WhatsApp</a>
+
+
+    <p class="share-store-text">
+      <a href="https://www.tudoforte.com.br/parceiros" target="_blank" rel="noreferrer" title="Acesse o Painel do Parceiro">
+        Acesse o Painel do Parceiro
+      </a>
+    </p>
+
+    <div class="wrapper-share-store-title-text">
+      <h3 class="share-store-title">Ainda não é Parceiro?</h3>
+      <p class="share-store-text">
+        <a href="https://www.parceirotudoforte.com.br/" target="_blank" rel="noreferrer" title="Clique e Saiba Mais Sobre o Programa de Parceiro Tudo Forte">
+        Clique Aqui e Saiba Mais
+        </a>
+      </p>
+    </div>
+
+  </div>
+</div>
+  
+
+<script>
+ 
+    const input = document.getElementById('codeSharePartner');
+    input.addEventListener('change', updateValueStore);
+
+    function checkTextFieldStore(field) {
+      if (field.value == '') {
+        document.getElementById('codeSharePartner').style.borderColor = 'red';
+        document.getElementById('codeSharePartner').style.borderWidth = '1px';
+      }
+    }
+
+    function updateValueStore(e) {
+      let codigo = e.target.value;
+
+      let buttonFacebook = document.getElementById('buttonShareFacebook');
+      buttonFacebook.href = `https://facebook.com/sharer/sharer.php?u=www.tudoforte.com.br?parceiro=${codigo}`;
+
+      let buttonWhatsApp = document.getElementById('buttonShareWhatsApp');
+      buttonWhatsApp.href = `https://api.whatsapp.com/send?text=www.tudoforte.com.br?parceiro=${codigo}`;
+    }
+            
+
+</script>

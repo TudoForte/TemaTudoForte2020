@@ -1,0 +1,92 @@
+{#
+  # Smart Filter
+  # elements/snippets/smart_filter.html
+  #}
+  
+  {% if filters %}
+
+  <button class="filter-mobile-back" onclick="removeSidebarLeftMobile()"><i class="fa fa-angle-left"></i>Voltar</button>
+  
+  <form name="form-filter" method="get" class="wrapper-smartfilter">
+      <input type="hidden" name="loja" value="{{ store.id }}">
+      {% if search.word %}
+        <input name="palavra_busca" type="hidden" value="{{ search.word }}">
+      {% endif %}
+  
+      {% if category.id %}
+          <input type="hidden" name="categoria" value="{{ category.id }}">
+      {% endif %}
+  
+      {% if filters.applied %}
+          <h3 class="title-filter">Filtros Aplicados</h3>
+          <ul>
+              {% for applied in filters.applied %}
+                  {% for item in applied %}
+                      <li class="filter-item">
+                        <a class="item-close" href="{{ item.url }}" title="{{ item.title }}"><h2>{{ item.title }}</h2></a>
+                      </li>
+                  {% endfor %}
+              {% endfor %}
+          </ul>
+      {% endif %}
+  
+      {% for myFilter in filters %}
+  
+          {% if myFilter.items %}
+  
+              <h3 class="title-filter filter-accordion">{{ myFilter.title }}  <i class="fa fa-angle-down filter-arrow"></i></h3>
+              <ul class="filter-panel">
+              {% for item in myFilter.items %}
+                  <li class="filter-item">
+                      {% if item.type == "link" %}
+                          <a href="{{ item.url }}" title="{{ item.title }}"><h2>{{ item.title }}</h2></a>
+                      {% endif %}
+  
+                      {% if item.type == "checkbox" %}
+                          <label>
+                              {% set checked = item.applied ? 'checked="checked"' %}
+                              <input class="filter-item-button" type="submit" name="{{ item.name }}" value="{{ item.value }}" {{ checked }} />
+                              {{ item.title }}
+                          </label>
+                      {% endif %}
+                  </li>
+              {% endfor %}
+              </ul>
+  
+          {% elseif myFilter|length %}
+  
+             {% for var in myFilter %}
+  
+                 <h3 class="title-filter filter-accordion">{{ var.title }}  <i class="fa fa-angle-down filter-arrow"></i></h3>
+                 <ul class="filter-panel">
+                     {% for item in var.items %}
+                     <li class="filter-item">
+                         {% if item.type == "link" %}
+                         <a href="{{ item.url }}" title="{{ item.title }}"><h2>{{ item.title }}</h2></a>
+                         {% endif %}
+  
+                         {% if item.type == "checkbox" %}
+                         <label>
+                             {% set checked = item.applied ? 'checked="checked"' %}
+                             <input class="filter-item-button" type="submit"  name="{{ item.name }}" value="{{ item.value }}" {{ checked }} />
+                             {{ item.title }}
+                         </label>
+                         {% endif %}
+                     </li>
+                     {% endfor %}
+                 </ul>
+  
+             {% endfor %}
+  
+          {% endif %}
+  
+      {% endfor %}
+  
+      <!-- <button type="submit" class="filter-button">{{ Translation('filtrar') }}</button> -->
+  </form>
+  
+  {% endif %}
+
+
+
+  

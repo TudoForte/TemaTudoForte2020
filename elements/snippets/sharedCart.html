@@ -1,0 +1,185 @@
+<style>
+  .wrapper-sharedcart {
+    width: 360px;
+    /* padding: 8% 0 0; */
+    margin: auto;
+    display: none;
+  }
+
+  .wrapper-sharedcart:after {
+      content: "";
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transition: opacity 0.15s ease-in-out;
+      opacity: 1;
+      visibility: visible;
+      background-color: rgba(0, 0, 0, 0.6);
+      pointer-events: none;
+      position: fixed;
+      z-index: 5;
+  }
+
+
+  .sharedcart-form {
+    position: absolute;
+    top: 25%;
+    z-index: 6;
+    background: #FFFFFF;
+    max-width: 425px;
+    margin: 0 auto;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+
+  .sharedcart-form img {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .sharedcart-form input {
+    outline: 0;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: 1px solid #f2f2f2;
+  }
+  .sharedcart-form button {
+    text-transform: uppercase;
+    outline: 0;
+    background: #00C500;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  .sharedcart-form button:hover,.form button:active,.form button:focus {
+    background: #04a904;
+  }
+
+  .wrapper-sharedcart-buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+
+  .sharedcart-buttons-copy{
+    padding: 10px;
+    background-color: #0047d9;
+    color: #fff;
+    text-decoration: none;
+    display: none;
+  }
+
+  .sharedcart-buttons-copy:hover{
+    color: #fff; 
+  }
+
+  .sharedcart-buttons-whats{
+    padding: 10px;
+    background-color: #00C500;
+    color: #fff;
+    text-decoration: none;
+    display: none;
+  }
+  .sharedcart-buttons-whats:hover{
+    color: #fff; 
+  }
+
+  .sharedcart-buttons-finish{
+    padding: 10px;
+    background-color: #0047d9;
+    color: #fff;
+    text-decoration: none;
+    display: none;
+  }
+  .sharedcart-buttons-finish:hover{
+    color: #fff; 
+  }
+
+  .sharedcart-partner-link{
+    font-size: 14px;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid gray;
+  }
+
+  .sharedcart-form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+  .sharedcart-form .message a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+
+  .sharedcart-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: gray;
+    cursor: pointer;
+  }
+
+
+  @media screen and (max-width: 600px){
+
+    .sharedcart-form{
+      padding: 20px;
+      left: 0px;
+    }  
+  }
+
+  @media screen and (max-width: 320px){
+    .sharedcart-form img{
+      width: 150px;
+    }
+
+
+    .sharedcart-partner-link{
+      font-size: 13px;
+    }
+  }
+ 
+
+
+</style>
+
+
+<div class="wrapper-sharedcart">
+  <div class="form">
+    <div class="sharedcart-form">
+
+      <i class="sharedcart-close fa fa-times" onclick="closeModalSharedCart()"></i>
+
+      <img src="{{ asset('img/parceiro-tudoforte.svg') }}" alt="Logo Parceiro Tudo Forte" title="Logo Parceiro Tudo Forte">
+
+      <input id="partnerId" type="text" placeholder="Insira Aqui Seu Código de Parceiro" onkeyup="onlyNumbers(this);"/>
+
+      <button onclick="createLinkCart()">Gerar Orçamento <i class="fa fa-share-alt"></i></button>
+
+      <div class="wrapper-sharedcart-buttons">
+        <a id="sharedcart-buttons-copy" class="sharedcart-buttons-copy" onclick="copyToClipboard()" title="Copiar link com Código de Parceiro">Copiar</a>
+        <a id="sharedcart-buttons-whats" class="sharedcart-buttons-whats" target="_blank" rel="noreferrer" title="Compartilhar no WhatsApp link com Código de Parceiro">Compartilhar WhatsApp</a>
+        <a id="sharedcart-buttons-finish" class="sharedcart-buttons-finish" target="_blank" rel="noreferrer" title="Finalizar link com Código de Parceiro">Finalizar</a>
+      </div>
+
+      <p class="sharedcart-partner-link">
+        Ainda não é Parceiro Tudo Forte? <a target="_blank" rel="noreferrer" href="https://www.parceirotudoforte.com.br/" title="Clique Aqui para Saber Mais Sobre Programa de Parceiro Tudo Forte">Clique Aqui</a>
+      </p>
+
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,133 @@
+
+  .wrapper-banner-product-brands{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 160px;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: #e3e9f3 0px 2px 6px 0px;
+  }
+
+  .wrapper-banner-product-brands-logo-image{
+    /* width: 400px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .banner-product-brands-logo{
+    width: 130px;
+  }
+  
+  /* .banner-product-brands-image{
+    width: 130px;
+  } */
+
+  .wrapper-banner-product-brands-text{
+    text-align: center;
+  }
+
+  .banner-product-brands-title{
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .banner-product-brands-subtitle{
+    margin-top: 5px;
+  }
+
+  .wrapper-banner-product-brands-icon{
+    display: flex;
+  }
+
+  .wrapper-banner-product-brands-icon-content{
+    width: 130px;
+    text-align: center;
+  }
+
+  .banner-product-brands-border-left{
+    border-left: 1px solid #8080805c;
+  }
+  .banner-product-brands-border-right{
+    border-right: 1px solid #8080805c;
+  }
+
+  .banner-product-brands-icon{
+    width: 50px;
+  }
+
+  .banner-product-brands-text{
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  @media screen and (max-width: 900px) {
+    
+    .wrapper-banner-product-brands-logo-image{
+      width: 275px;
+    }
+
+    .banner-product-brands-logo{
+      display: none;
+    }
+
+    .banner-product-brands-image{
+      margin-bottom: 10px
+    }
+
+    .banner-product-brands-subtitle{
+      font-size: 12px;
+    }
+
+    .wrapper-banner-product-brands-icon-content{
+      width: 100px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .wrapper-banner-product-brands{
+      flex-direction: column;
+      padding: 15px;
+      height: auto;
+    }
+
+    .banner-product-brands-title{
+      font-size: 16px;
+    }
+
+    .wrapper-banner-product-brands-icon-content{
+      width: 33%;
+      margin-bottom: 5px;
+    }
+
+    .wrapper-banner-product-brands-icon{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 10px;
+    }
+
+    .banner-product-brands-text {
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+  }
+
+
+  @media screen and (max-width: 320px) {
+
+    .banner-product-brands-subtitle {
+      font-size: 11px;
+    }
+  
+    .banner-product-brands-text{
+      font-size: 8px;
+    }
+  }
+
+

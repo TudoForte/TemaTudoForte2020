@@ -1,0 +1,286 @@
+.wrapper-payment {
+  margin-top: 20px;
+  // margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  // box-shadow: rgb(227, 233, 243) 0px 2px 6px 0px;
+}
+
+.wrapper-payment-credit {
+  padding: 20px;
+}
+
+.payment-credit-title {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.payment-credit-flags {
+  border-top: 1px solid $color-gray-ab;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.payment-credit-image {
+  margin-right: 20px;
+}
+
+
+.wrapper-credit-list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 180px;
+  margin-top: 20px;
+}
+
+.credit-list-item{
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 50%;
+  font-size: 12px;
+  justify-content: start;
+  padding-left: 40px;
+}
+
+.credit-list-item:nth-child(1) {
+  background-color: $color-gray-ab;
+}
+
+.credit-list-item:nth-child(3) {
+  background-color: $color-gray-ab;
+}
+
+.credit-list-item:nth-child(5) {
+  background-color: $color-gray-ab;
+}
+
+.credit-list-item:nth-child(7) {
+  background-color: $color-gray-ab;
+}
+
+.credit-list-item:nth-child(9) {
+  background-color: $color-gray-ab;
+}
+
+.credit-list-item:nth-child(11) {
+  background-color: $color-gray-ab;
+}
+
+
+.list-item-featured{
+  color: $third-color;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.credit-list-item > strong{
+  font-weight: 700;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.wrapper-payment-bank-slip {
+  padding: 20px;
+}
+
+.payment-bank-slip-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.bank-slip-name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.payment-bank-slip-text {
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.payment-bank-slip-image {
+  margin-right: 10px;
+}
+
+.wrapper-payment-slip-transfer {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.wrapper-payment-bank-transfer {
+  padding: 20px;
+  display: none;
+}
+
+.payment-bank-transfer-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.payment-bank-transfer-image {
+  margin-right: 10px;
+}
+
+.payment-bank-transfer-text {
+  line-height: 20px;
+}
+
+@media screen and (max-width: 600px) {
+
+  .payment-credit-image{
+    display: none;
+  }
+
+  .credit-list-item{
+    padding-left: 7px;
+  }
+
+  .payment-credit-flags > img {
+    width: 20px;
+  }
+
+  .wrapper-payment {
+    box-shadow: unset;
+  }
+
+  .wrapper-payment-credit {
+    margin-bottom: 0;
+    padding: 0px;
+  }
+
+  .payment-bank-slip-title{
+    font-size: 14px;
+  }
+
+  .payment-bank-slip-image {
+    width: 25px
+  }
+
+  .payment-bank-transfer-title{
+    font-size: 12px;
+  }
+
+  .payment-bank-transfer-image{
+    width: 25px
+  }
+
+  .payment-bank-slip-title > span {
+    display: flex;
+    align-items: baseline;
+    // flex-direction: column;
+    // margin-left: 10px;
+  }
+
+  .payment-bank-transfer-title > span {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .payment-bank-transfer-title > span {
+    display: flex;
+  }
+
+  .wrapper-payment-credit {
+    margin-top: 0px;
+    padding: 0px;
+  }
+
+  .wrapper-payment-slip-transfer {
+    margin-top: 20px;
+    display: flex;
+  }
+
+  .wrapper-payment-bank-slip {
+    padding: 0px;
+    // width: 50%;
+  }
+
+  .wrapper-payment-bank-transfer {
+    padding: 0px;
+    width: 50%;
+  }
+
+  .payment-bank-transfer-text {
+    display: none;
+    // line-height: 18px;
+    // font-size: 12px;
+  }
+
+  .payment-bank-slip-text {
+    display: none;
+    // line-height: 18px;
+    // font-size: 12px;
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+
+  .payment-credit-flags{
+    display: none;
+  }
+
+  .payment-bank-slip-title{
+    font-size: 14px; 
+  }
+
+  .bank-slip-value{
+    margin-left: 5px;
+    margin-right: 5px;
+    text-transform: capitalize;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .credit-list-item{
+    font-size: 11px;
+  }
+}
+
+
+@media screen and (max-width: 350px) {
+  .credit-list-item{
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .wrapper-credit-list{
+    flex-direction: row;
+    height: unset;
+  }
+
+  // .credit-list-item:nth-child(6) {
+  //   background-color: unset;
+  // }
+  
+  // .credit-list-item:nth-child(7) {
+  //   background-color: $color-gray-ab;
+  // }
+
+  // .credit-list-item:nth-child(8) {
+  //   background-color: unset;
+  // }
+  
+  // .credit-list-item:nth-child(9) {
+  //   background-color: $color-gray-ab;
+  // }
+
+  // .credit-list-item:nth-child(10) {
+  //   background-color: unset;
+  // }
+  
+
+}
+
+

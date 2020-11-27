@@ -1,0 +1,77 @@
+/**
+ * Catalogo-Form-Filtros
+ */
+
+ .wrapper-catalogo-form-filtros{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+ }
+
+ .catalogo-form-filtros{
+    height: 30px;
+    display: flex;
+
+    .filtros{
+      margin-left: 20px;
+    }
+
+    .select{
+      height: 30px;
+      padding: 5px;
+      border: 0px;
+      border: 1px solid $color-gray-blue;
+    }
+ }
+
+
+ .catalogo-comparator{
+  display: none;
+ }
+
+
+ @media screen and (max-width: 900px) {
+  .wrapper-catalogo-form-filtros{
+    // display: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1px solid $color-gray-blue;
+    padding: 10px;
+   }
+
+   .catalogo-form-filtros{
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+
+    .filtros{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 5px;
+    }
+
+    .select{
+      appearance: none;
+      width: 100%;
+      max-width: 150px;
+    }
+  }
+ }
+
+
+ @media screen and (max-width: 320px) {
+  .wrapper-catalogo-form-filtros{
+ 
+
+    .filtros{
+      font-size: 12px;
+    }
+
+  }
+ }
+
+ 
+ 

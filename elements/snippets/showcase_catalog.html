@@ -1,0 +1,12 @@
+{% if products|length > 0 %}
+
+
+            {% for product in products %}
+                
+                <div class="product product-catalog">
+                    {% element 'snippets/product' {"product": product} %}
+                </div>  
+            {% endfor %}    
+        
+    
+{% endif %}

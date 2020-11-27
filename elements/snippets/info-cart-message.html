@@ -1,0 +1,159 @@
+<style>
+    .wrapper-info-cart-message {
+      display: none; 
+      position: fixed; 
+      z-index: 10; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%;
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.4);
+      overflow-y: auto;
+    }
+
+    .info-cart-message-content {
+      background-color: #fefefe;
+      margin: 10% auto; 
+      padding: 20px;
+      border: 1px solid #888;
+      max-width: 840px;
+      height: 411px;
+      padding: 40px;
+      position: relative;
+      font-size: 20px;
+    }
+
+    .info-cart-message-title{
+      font-weight: bold;
+      text-align: center;
+      font-size: 32px;
+      line-height: 42px;
+    }
+
+    .info-cart-message-list{
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
+    .info-cart-message-list-item{
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      line-height: 25px;
+    }
+
+    .info-cart-message-list-item-image{
+      margin-right: 15px;
+      width: 50px;
+      height: 50px;
+    }
+
+
+    .close {
+      color: #aaa;
+      font-size: 28px;
+      font-weight: bold;
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      opacity: 1;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+
+    @media screen and (max-width: 600px) {
+      .info-cart-message-content {
+        margin: 25% auto; 
+      }
+
+      .info-cart-message-title{
+        font-size: 18px;
+        line-height: 20px;
+      }
+
+      .info-cart-message-content {
+        font-size: 14px;
+        line-height: 16px;
+      }
+
+    }
+
+
+    
+    @media screen and (max-width: 320px) {
+      .info-cart-message-title{
+        font-size: 16px;
+      }
+
+      .info-cart-message-list-item{
+        line-height: 20px;
+      }
+
+    }
+
+</style>
+
+
+<div id="info-cart-message" class="wrapper-info-cart-message">
+  
+  <div class="info-cart-message-content">
+
+    <span class="close">&times;</span>
+
+    <h3 class="info-cart-message-title">Você pode devolver este produto gratuitamente. Não importa o motivo!</h3>
+
+    <ul class="info-cart-message-list">
+      <li class="info-cart-message-list-item">
+        <img class="info-cart-message-list-item-image" rel="prerender" src="{{ asset('img/icon-calendar.svg') }}" alt="Icone Devolução em 30 dias" title="Icone Devolução em 7 dias"/>
+        <span>Você tem 7 dias a contar da data de recebimento.</span>
+      </li>
+      <li class="info-cart-message-list-item">
+        <img class="info-cart-message-list-item-image" rel="prerender" src="{{ asset('img/icon_back_maior.svg') }}" alt="Icone Devolução Grátis" title="Icone Devolução Grátis"/>
+        <span>Você pode enviá-lo da agência de Correios mais próxima.</span>
+      </li>
+      <li class="info-cart-message-list-item">
+        <img class="info-cart-message-list-item-image" rel="prerender" src="{{ asset('img/icon_money.svg') }}" alt="Icone Devolução Dinheiro" title="Icone Devolução Dinheiro"/>
+        <span>Para devolver, o produto deve estar nas mesmas condições nas quais você o recebeu.</span>
+      </li>
+    </ul>
+
+  </div>
+
+</div>
+
+
+<script>
+
+    var modal = document.getElementById("info-cart-message");
+    var btn = document.getElementById("info-cart-message-button");
+    var span = document.getElementsByClassName("close")[0];
+
+
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+
+      if (event.target == modalFaleAnalista) {
+        modalFaleAnalista.style.display = "none";
+      }
+    }
+
+
+</script>

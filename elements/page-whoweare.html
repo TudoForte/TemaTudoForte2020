@@ -1,0 +1,696 @@
+<style type="text/css">
+  .board_htm {
+    position: relative;
+    margin: 0;
+    clear: both;
+    display: table;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .wrapper-header-whoweare {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: #0047d9;
+    color: #fff;
+  }
+
+  .wrapper-header-whoweare-title {
+    margin: 0;
+    font-size: 32px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .wrapper-header-whoweare-subtitle {
+    margin: 20px 0 0 0 !important;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .wrapper-header-whoweare-group-image {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .wrapper-header-whoweare-group-image>img {
+    width: 290px;
+  }
+
+  .wrapper-section {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+  }
+
+  .section-content {
+    margin-top: 20px;
+    width: 500px;
+    text-align: justify;
+    line-height: 20px;
+  }
+
+  .section-content p {
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .section-content p strong {
+    font-weight: bold;
+  }
+
+  .section-content ul li {
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .wrapper-content-service {
+    width: 500px;
+  }
+
+  .content-service {
+    height: 400px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0047d9;
+    color: #fff;
+  }
+
+  .content-service-title {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .content-service-text {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .content-service-text>strong {
+    font-weight: bold;
+  }
+
+  .wrapper-cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+
+  .cards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    width: 300px;
+    height: 265px;
+    padding: 30px;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 23px;
+    background: #ffffff;
+    box-shadow: #e3e9f3 0px 2px 6px 0px;
+    text-align: center;
+  }
+
+  .card-efficiency {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .card-purchase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .card-sales-approved {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .cards-image {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+
+  .wrapper-product {
+    margin-top: 40px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0047d9;
+    color: #fff;
+  }
+
+
+  .product-content {
+    width: 400px;
+  }
+
+  .product-image {
+    width: 500px;
+    margin-right: 40px;
+  }
+
+  .product-content-title {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .product-content-text {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .product-content-text>strong {
+    font-weight: bold;
+  }
+
+
+  .wrapper-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .map {
+    width: 500px;
+    height: 300px;
+    margin-left: 40px;
+  }
+
+  .map-image {
+    width: 500px;
+    height: 300px;
+  }
+
+
+
+  @media(max-width: 600px) {
+
+    .board_htm {
+      padding: 0
+    }
+
+    .wrapper-header-whoweare {
+      height: auto;
+      margin-top: 20px;
+    }
+
+    .wrapper-header-whoweare-title {
+      font-size: 20px;
+      line-height: 32px;
+      text-align: center;
+      padding: 20px 0px 0px;
+    }
+
+    .wrapper-header-whoweare-subtitle {
+      font-size: 12px;
+      line-height: 20px;
+      text-align: center;
+      margin: 0px 20px 20px 20px !important;
+    }
+
+    .wrapper-header-whoweare-group-image {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
+    .wrapper-header-whoweare-group-image>img {
+      margin-bottom: 20px;
+    }
+
+    .wrapper-header-whoweare-text {
+      font-size: 14px;
+      margin: 0px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 15px;
+      text-align: center;
+    }
+
+    .wrapper-section {
+      flex-direction: column;
+      margin-top: 20px;
+      margin-left: 0;
+    }
+
+    .section-content {
+      width: 270px;
+      margin: 0 auto;
+    }
+
+
+    .section-content ul {
+      padding-left: 0px;
+    }
+
+    .board_htm li,
+    .board_htm ul {
+      margin-left: 0px;
+    }
+
+    .section-content-image {
+      display: none;
+    }
+
+    .wrapper-content-service>h2 {
+      font-size: 20px;
+      text-align: center;
+      margin-top: 20px;
+      line-height: 24px;
+    }
+
+    .content-service {
+      flex-direction: column;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    .wrapper-content-service {
+      width: 270px;
+    }
+
+    .content-service-image {
+      width: 270px;
+    }
+
+    .wrapper-cards {
+      flex-direction: column;
+    }
+
+    .cards {
+      margin-top: 20px;
+      width: 270px;
+      height: auto;
+    }
+
+    .cards h1,
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
+    .wrapper-product {
+      flex-direction: column;
+      margin-top: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      height: auto;
+    }
+
+    .product-image {
+      width: 270px;
+      margin-right: 0px;
+    }
+
+    .product-content {
+      width: 270px;
+      height: auto;
+    }
+
+    .product-content>h2 {
+      text-align: center;
+      font-size: 20px;
+      line-height: 24px;
+      margin-top: 20px;
+    }
+
+
+    .wrapper-map {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
+    .map-image {
+      width: 285px;
+      height: 200px;
+      margin-left: 0px;
+    }
+
+    .map {
+      width: 285px;
+      height: 200px;
+      margin-top: 20px;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+
+  }
+</style>
+<div class="wrapper-header-whoweare">
+  <h1 class="wrapper-header-whoweare-title">Entenda Porque a <strong>Tudo Forte</strong> &eacute; Confi&aacute;vel</h1>
+
+  <p class="wrapper-header-whoweare-subtitle">Vamos te Contar Tudo sobre a Nossa Empresa</p>
+</div>
+
+<div class="wrapper-header-whoweare-group-image">
+  <img src="https://static3.tcdn.com.br/img/editor/up/332274/quemsomosequipe2.png" alt="Equipe Tudo Forte Unidade de Penápolis" title="Equipe Tudo Forte Unidade de Penápolis" /> 
+  <img src="https://static3.tcdn.com.br/img/editor/up/332274/quemsomosequipe3.png" alt="Equipe Tudo Forte Unidade de São José do Rio Preto" title="Equipe Tudo Forte Unidade de São José do Rio Preto"/>
+  <img src="https://static3.tcdn.com.br/img/editor/up/332274/quemsomosequipe4.png" alt="Equipe Tudo Forte de Estoque e Logística" title="Equipe Tudo Forte de Estoque e Logística" />
+  <img src="https://static3.tcdn.com.br/img/editor/up/332274/quemsomosequipe5.png" alt="Equipe Tudo Forte" title="Equipe Tudo Forte" />
+</div>
+
+<div class="wrapper-section">
+  <div class="section-content">
+    <p><strong>Somos a Maior Empresa Especializada no Ramo de Seguran&ccedil;a Eletr&ocirc;nica do Brasil.</strong>
+      Temos como objetivo servir bem, oferecendo aos nossos clientes um servi&ccedil;o &aacute;gil, de confian&ccedil;a
+      e um atendimento de excel&ecirc;ncia.</p>
+
+    <p>H&aacute; <strong>8 anos</strong> Levamos o Melhor da Seguran&ccedil;a para a Sua Resid&ecirc;ncia,
+      Com&eacute;rcio, Ind&uacute;stria ou Condom&iacute;nio. Durante esse Per&iacute;odo <strong>Atendemos mais de 300
+        mil Clientes</strong> e Temos Orgulho de Tantas Pessoas Confiarem na <strong>Tudo Forte</strong> para Tornarem
+      Suas Vidas Mais Seguras e Felizes.</p>
+
+    <p>Temos <strong>Recorde de Avalia&ccedil;&otilde;es Positivas</strong> Auditadas pelo Google, Ebit e
+      Opini&otilde;es Verificados e tudo isso Devemos a Voc&ecirc;, Nosso Cliente.</p>
+
+    <p>Queremos que nossos clientes tenham uma experi&ecirc;ncia positiva durante o processo de compra. Acreditamos que
+      esta experi&ecirc;ncia deva come&ccedil;ar pela identifica&ccedil;&atilde;o das suas necessidades, pela oferta dos
+      melhores produtos e os &uacute;ltimos lan&ccedil;amentos, pre&ccedil;os e condi&ccedil;&otilde;es de pagamento
+      competitivos, e pela agilidade e pontualidade da entrega.</p>
+
+    <ul>
+      <li>Seguran&ccedil;a em Primeiro Lugar.</li>
+      <li>Qualidade Comprovada de todos os equipamentos oferecidos.</li>
+      <li>Transpar&ecirc;ncia e Honestidade acerca das informa&ccedil;&otilde;es t&eacute;cnicas e demais aqui contidas.
+      </li>
+    </ul>
+
+    <p><strong>Nossa Miss&atilde;o</strong> Repassar atrav&eacute;s de produtos, projetos e atendimento, todo o nosso
+      conhecimento adquirido ao longo de anos de experi&ecirc;ncia no setor de seguran&ccedil;a eletr&ocirc;nica. Vender
+      somente produtos de qualidade garantida e comprovada em campo, para que seu projeto ou sistema de seguran&ccedil;a
+      seja preciso e n&atilde;o falhe na hora que mais precisar.</p>
+
+    <p><strong>Seguran&ccedil;a N&atilde;o Tem Pre&ccedil;o, Tem Nome, Tudo Forte</strong></p>
+  </div>
+  <img alt="Quem Somos" title="Quem Somos" class="section-content-image"
+    src="https://static3.tcdn.com.br/img/editor/up/332274/quemsomosquemsomos.png" />
+</div>
+
+<div class="content-service">
+  <div class="wrapper-content-service">
+    <h2 class="content-service-title">N&oacute;s Temos Qualidade e Seguran&ccedil;a</h2>
+
+    <p class="content-service-text">A <strong>Tudo Forte</strong> possui produtos confi&aacute;veis e de excelente
+      desempenho. Possu&iacute;mos um grande cat&aacute;logo de op&ccedil;&otilde;es para atender as mais diversas
+      necessidades.</p>
+
+    <p class="content-service-text">Todos os nossos produtos acompanham nota fiscal e embalagens lacradas para sua total
+      confiabilidade. Comprar na <strong>Tudo Forte</strong> &eacute; ter a certeza de escolher o produto certo e
+      receb&ecirc;-lo em sua casa com toda a comodida e respeito que voc&ecirc; merece!</p>
+  </div>
+  <img alt="Parceiro Tudo Forte" title="Parceiro Tudo Forte" class="content-service-image"
+    src="https://static3.tcdn.com.br/img/editor/up/332274/quemsomosrevendedor.png" width="300px" />
+</div>
+
+<div class="wrapper-cards">
+  <div class="cards">
+    <h1 class="card-efficiency">
+      <svg alt="Eficiência" class="cards-image" fill="#1752CA"
+        style="enable-background:new 0 0 512 512;" version="1.1" viewbox="0 0 512 512" x="0px" xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+        <g>
+          <g>
+            <path d="M506.135,221.963l-87.197-98.667c-1.898-2.148-4.627-3.378-7.493-3.378H100.556c-2.866,0-5.595,1.23-7.493,3.378
+L5.865,221.963c-2.604,2.947-3.239,7.146-1.623,10.732c0.609,1.352,1.497,2.52,2.577,3.453c0.021,0.023,0.037,0.049,0.058,0.073
+l241.642,272.415c1.898,2.14,4.621,3.364,7.481,3.364c2.86,0,5.583-1.225,7.481-3.364l241.642-272.415
+c0.021-0.023,0.038-0.049,0.058-0.073c1.079-0.933,1.967-2.102,2.577-3.453C509.374,229.109,508.739,224.91,506.135,221.963z
+M393.713,139.917l-44.441,71.644l-71.22-71.644H393.713z M328.054,218.585H183.946L256,146.102L328.054,218.585z
+M233.948,139.918l-71.22,71.644l-44.441-71.644H233.948z M99.004,146.774l44.545,71.811H35.541L99.004,146.774z M35.709,238.585
+h118.178l81.636,225.261L35.709,238.585z M276.848,463.428l57.038-154.372c1.914-5.181-0.734-10.932-5.914-12.846
+c-5.183-1.916-10.933,0.733-12.846,5.914l-59.035,159.777L175.16,238.585h301.131L276.848,463.428z M368.451,218.585
+l44.545-71.811l63.463,71.811H368.451z"></path>
+          </g>
+        </g>
+        <g>
+          <g>
+            <path
+              d="M256,0c-5.522,0-10,4.477-10,10v51.513c0,5.523,4.478,10,10,10c5.522,0,10-4.477,10-10V10C266,4.477,261.522,0,256,0z">
+            </path>
+          </g>
+        </g>
+        <g>
+          <g>
+            <path d="M347.062,39.524c-3.905-3.905-10.235-3.905-14.143,0l-36.426,36.425c-3.905,3.905-3.905,10.237,0,14.142
+c1.954,1.953,4.513,2.929,7.072,2.929c2.559,0,5.118-0.977,7.071-2.929l36.426-36.425
+C350.967,49.761,350.967,43.429,347.062,39.524z"></path>
+          </g>
+        </g>
+        <g>
+          <g>
+            <path d="M213.558,75.949l-36.425-36.425c-3.904-3.905-10.234-3.905-14.143,0c-3.905,3.905-3.905,10.237,0,14.142l36.426,36.425
+c1.953,1.953,4.512,2.929,7.071,2.929s5.118-0.977,7.071-2.929C217.463,86.186,217.463,79.854,213.558,75.949z"></path>
+          </g>
+        </g>
+        <g>
+          <g>
+            <circle cx="337.43" cy="268.36" r="10"></circle>
+          </g>
+        </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+      </svg> Efici&ecirc;ncia</h1>
+
+    <p>Garantimos a voc&ecirc; os melhores produtos, com uma ampla variedade de marcas e modelos. Um para gosto ou
+      necessidade.</p>
+  </div>
+
+  <div class="cards">
+    <h1 class="card-purchase"><svg alt="Medalha" class="cards-image" fill="#1752CA"
+        style="enable-background:new 0 0 511.999 511.999;" version="1.1" viewbox="0 0 511.999 511.999" x="0px"
+        xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+        <g>
+          <g>
+            <path d="M321.356,63.796c-56.318-28.458-124.159-17.577-168.81,27.075c-51.895,51.894-57.089,134.64-12.081,192.474
+c1.591,2.044,3.969,3.114,6.373,3.114c1.732,0,3.477-0.555,4.95-1.702c3.517-2.737,4.149-7.806,1.413-11.323
+c-40.019-51.422-35.394-125.002,10.757-171.153c39.71-39.712,100.038-49.39,150.122-24.083c3.976,2.012,8.83,0.414,10.84-3.563
+C326.929,70.658,325.335,65.805,321.356,63.796z"></path>
+          </g>
+        </g>
+        <g>
+          <g>
+            <path d="M385.787,128.239c-2.01-3.977-6.861-5.573-10.841-3.565c-3.977,2.009-5.574,6.861-3.565,10.84
+c25.289,50.076,15.606,110.396-24.095,150.096c-46.152,46.15-119.731,50.774-171.153,10.757
+c-3.518-2.736-8.586-2.104-11.323,1.412c-2.737,3.517-2.104,8.586,1.413,11.323c26.344,20.502,57.855,30.586,89.266,30.586
+c37.547,0,74.952-14.411,103.209-42.668C403.339,252.38,414.225,184.552,385.787,128.239z"></path>
+          </g>
+        </g>
+        <g>
+          <g>
+            <path d="M364.94,97.508c-1.999-2.262-4.099-4.496-6.242-6.638c-2.143-2.143-4.376-4.243-6.638-6.242
+c-3.339-2.952-8.439-2.636-11.388,0.703c-2.953,3.338-2.639,8.437,0.7,11.388c2.015,1.78,4.005,3.652,5.915,5.561
+c1.908,1.91,3.78,3.899,5.561,5.914c1.594,1.804,3.816,2.725,6.049,2.725c1.899,0,3.805-0.667,5.34-2.023
+C367.577,105.946,367.891,100.847,364.94,97.508z"></path>
+          </g>
+        </g>
+        <g>
+          <g>
+            <path d="M446.066,208.41c5.38-8.827,5.38-19.791-0.002-28.616l-10.615-17.407c-1.398-2.294-1.939-5.018-1.521-7.67l3.164-20.103
+c1.613-10.245-2.596-20.398-10.982-26.499l-16.451-11.966c-2.175-1.583-3.721-3.892-4.354-6.506l-4.791-19.799
+c-2.432-10.057-10.191-17.815-20.247-20.249l-19.8-4.792c-2.614-0.633-4.925-2.179-6.506-4.354l-11.968-16.455
+c-6.1-8.386-16.254-12.597-26.496-10.983l-20.11,3.164c-2.652,0.417-5.377-0.123-7.669-1.521L270.308,4.036
+c-8.826-5.382-19.79-5.381-28.616,0l-17.408,10.615c-2.292,1.399-5.015,1.937-7.67,1.521l-20.104-3.164
+c-10.242-1.612-20.397,2.597-26.497,10.983l-11.966,16.451c-1.583,2.175-3.893,3.721-6.508,4.354l-19.799,4.791
+c-10.055,2.432-17.815,10.191-20.249,20.247l-4.792,19.8c-0.633,2.614-2.178,4.925-4.354,6.506L85.89,108.108
+c-8.386,6.099-12.594,16.251-10.983,26.496l3.164,20.111c0.417,2.653-0.123,5.377-1.521,7.669l-10.617,17.411
+c-5.38,8.826-5.38,19.79,0.001,28.615l10.615,17.408c1.398,2.294,1.939,5.018,1.521,7.67l-3.164,20.104
+c-1.613,10.244,2.596,20.398,10.982,26.498l16.451,11.966c2.175,1.581,3.721,3.892,4.354,6.506l4.791,19.799
+c2.432,10.057,10.191,17.815,20.247,20.249l8.268,2.001L84.045,465.425c-1.189,2.653-0.86,5.739,0.863,8.081
+c1.722,2.342,4.569,3.577,7.457,3.231l45.022-5.383l25.936,37.191c1.518,2.175,3.995,3.453,6.616,3.453
+c0.251,0,0.505-0.012,0.757-0.035c2.894-0.272,5.419-2.081,6.608-4.732l57.145-127.479l7.241,4.415
+c4.413,2.691,9.36,4.036,14.308,4.036c4.948,0,9.895-1.346,14.308-4.036l7.502-4.574l57.217,127.638
+c1.189,2.653,3.713,4.46,6.608,4.732c0.253,0.024,0.506,0.036,0.757,0.036c2.621,0,5.099-1.278,6.616-3.453l25.936-37.191
+l45.022,5.383c2.886,0.343,5.735-0.889,7.457-3.231c1.722-2.342,2.053-5.428,0.863-8.081l-55.983-124.883l7.957-1.925
+c10.055-2.432,17.815-10.191,20.249-20.247l4.792-19.8c0.633-2.614,2.179-4.925,4.354-6.506l16.455-11.968
+c8.386-6.099,12.594-16.251,10.983-26.496l-3.164-20.111c-0.417-2.653,0.123-5.377,1.521-7.669L446.066,208.41z M168.408,487.627
+l-20.554-29.474c-1.704-2.444-4.618-3.752-7.576-3.396l-35.679,4.266L155.578,345.3c0.932,0.685,1.768,1.506,2.457,2.455
+l11.968,16.455c1.137,1.563,2.415,2.98,3.808,4.242l-26.833,59.857c-1.822,4.067-0.004,8.84,4.062,10.663
+c1.072,0.481,2.193,0.708,3.295,0.708c3.082,0,6.026-1.776,7.367-4.77l26.738-59.644c2.631,0.361,5.34,0.355,8.059-0.073
+l20.11-3.164c1.204-0.189,2.421-0.172,3.606,0.024L168.408,487.627z M407.732,459.021l-35.68-4.264
+c-2.961-0.355-5.872,0.952-7.576,3.396l-20.554,29.474l-51.829-115.619c1.087-0.148,2.196-0.148,3.293,0.024l20.103,3.164
+c2.829,0.445,5.648,0.431,8.379,0.024l26.758,59.692c1.343,2.995,4.285,4.77,7.367,4.77c1.103,0,2.224-0.227,3.295-0.708
+c4.066-1.822,5.885-6.597,4.062-10.663l-26.935-60.085c1.299-1.206,2.5-2.541,3.571-4.013l11.966-16.451
+c0.754-1.037,1.678-1.926,2.716-2.645L407.732,459.021z M432.287,200.008l-10.617,17.411c-3.385,5.554-4.695,12.152-3.684,18.578
+l3.164,20.11c0.665,4.229-1.073,8.42-4.534,10.938l-16.456,11.969c-5.267,3.832-9.013,9.429-10.545,15.76l-4.792,19.8
+c-1.005,4.151-4.207,7.354-8.359,8.359l-19.8,4.791c-6.332,1.532-11.93,5.278-15.762,10.546l-11.966,16.451
+c-2.518,3.463-6.708,5.199-10.939,4.533l-20.104-3.164c-6.427-1.011-13.026,0.297-18.581,3.684l-17.407,10.615
+c-3.643,2.22-8.171,2.22-11.812,0l-17.411-10.616c-4.33-2.641-9.294-4.017-14.317-4.017c-1.42,0-2.847,0.11-4.262,0.333
+l-20.111,3.164c-4.23,0.666-8.42-1.073-10.938-4.534l-11.969-16.455c-3.832-5.267-9.429-9.013-15.76-10.545l-19.8-4.792
+c-4.151-1.005-7.354-4.207-8.359-8.359l-4.791-19.799c-1.532-6.332-5.277-11.931-10.546-15.763l-16.45-11.967
+c-3.462-2.518-5.199-6.71-4.533-10.939l3.164-20.104c1.011-6.427-0.297-13.025-3.684-18.58l-10.615-17.409
+c-2.221-3.643-2.221-8.17,0-11.812l10.617-17.411c3.386-5.554,4.695-12.152,3.684-18.578l-3.164-20.11
+c-0.665-4.229,1.073-8.42,4.534-10.938l16.456-11.969c5.267-3.832,9.013-9.429,10.545-15.76l4.792-19.8
+c1.005-4.151,4.207-7.354,8.359-8.359l19.8-4.791c6.332-1.532,11.93-5.278,15.761-10.546l11.966-16.451
+c2.518-3.462,6.708-5.201,10.939-4.534l20.104,3.164c6.428,1.013,13.027-0.297,18.581-3.684l17.407-10.615
+c3.643-2.22,8.171-2.22,11.812,0l17.411,10.616c5.554,3.388,12.154,4.697,18.579,3.685l20.111-3.164
+c4.228-0.663,8.42,1.073,10.938,4.534l11.969,16.455c3.832,5.267,9.429,9.013,15.76,10.545l19.8,4.792
+c4.151,1.005,7.354,4.207,8.359,8.359l4.791,19.799c1.532,6.332,5.277,11.931,10.546,15.763l16.451,11.966
+c3.462,2.518,5.199,6.71,4.533,10.939l-3.164,20.104c-1.011,6.427,0.297,13.025,3.684,18.58l10.615,17.409
+C434.509,191.838,434.509,196.365,432.287,200.008z"></path>
+          </g>
+        </g>
+        <g>
+          <g>
+            <path d="M350.416,168.997c-1.778-5.474-6.433-9.296-12.149-9.974l-48.551-5.757l-20.478-44.395
+c-2.411-5.226-7.484-8.473-13.24-8.473c-5.755,0-10.829,3.247-13.24,8.473l-20.478,44.396l-48.551,5.757
+c-5.716,0.678-10.372,4.5-12.149,9.974c-1.778,5.471-0.258,11.3,3.966,15.207l35.895,33.195l-9.528,47.954
+c-1.121,5.646,1.075,11.254,5.732,14.636c2.569,1.866,5.55,2.811,8.55,2.811c2.439,0,4.889-0.624,7.14-1.884l42.662-23.879
+l42.662,23.879c5.023,2.812,11.034,2.457,15.691-0.926c4.657-3.383,6.853-8.992,5.731-14.637l-9.528-47.953l35.895-33.195
+C350.674,180.299,352.194,174.471,350.416,168.997z M296.282,208.62c-2.06,1.905-2.982,4.744-2.436,7.496l9.75,49.071
+l-43.658-24.437c-1.224-0.685-2.582-1.028-3.941-1.028c-1.359,0-2.716,0.342-3.941,1.028l-43.658,24.437l9.75-49.071
+c0.548-2.753-0.375-5.591-2.436-7.496L178.98,174.65l49.686-5.891c2.786-0.33,5.201-2.085,6.377-4.632l20.955-45.431
+l20.955,45.431c1.176,2.547,3.59,4.302,6.377,4.632l49.684,5.891L296.282,208.62z"></path>
+          </g>
+        </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+        <g> </g>
+      </svg> P&oacute;s-compra</h1>
+
+    <p>Possu&iacute;mos uma das melhores rela&ccedil;&otilde;es de p&oacute;s-compras do Brasil, gra&ccedil;as ao
+      excelente preparo de nossos atendentes.</p>
+  </div>
+
+  <div class="cards">
+    <h2 class="card-sales-approved"><svg alt="Desconto" class="cards-image" enable-background="new 0 0 512 512"
+        fill="#1752CA" viewbox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <path d="" fill="none"></path>
+          <g>
+            <path
+              d="m476.94 332.587h-124.402c-4.151 0-7.515 3.364-7.515 7.515 0 4.15 3.364 7.515 7.515 7.515h124.402c5.78 0 10.482 4.702 10.482 10.482s-4.703 10.482-10.482 10.482h-309.423c-25.5 0-46.246-20.746-46.246-46.246 0-21.449 14.561-39.939 35.408-44.964 1.943-.468 3.618-1.691 4.658-3.397 1.039-1.707 1.356-3.757.88-5.698l-31.832-129.826c-.988-4.031-5.057-6.497-9.088-5.509s-6.497 5.057-5.509 9.088l30.145 122.943c-23.704 8.873-39.691 31.494-39.691 57.362 0 33.787 27.488 61.275 61.275 61.275h10.586c-15.206 12.342-24.946 31.168-24.946 52.233 0 7.091 1.1 14.078 3.269 20.767 1.28 3.947 5.52 6.108 9.466 4.83 3.948-1.28 6.111-5.518 4.83-9.466-1.682-5.189-2.536-10.616-2.536-16.131 0-28.801 23.432-52.233 52.233-52.233s52.233 23.431 52.233 52.233c0 28.801-23.432 52.233-52.233 52.233-13.237 0-25.863-4.96-35.551-13.966-3.04-2.826-7.794-2.652-10.62.387-2.826 3.04-2.652 7.795.388 10.62 12.478 11.599 28.738 17.987 45.784 17.987 37.089 0 67.263-30.174 67.263-67.263 0-21.065-9.741-39.891-24.946-52.233h103.484c-15.206 12.342-24.946 31.168-24.946 52.233 0 37.089 30.174 67.263 67.262 67.263s67.262-30.174 67.262-67.263c0-21.065-9.741-39.891-24.946-52.233h26.089c14.068 0 25.512-11.444 25.512-25.511-.002-14.065-11.446-25.509-25.514-25.509zm-16.172 103.255c0 28.801-23.431 52.233-52.233 52.233-28.801 0-52.233-23.432-52.233-52.233s23.431-52.233 52.233-52.233c28.802.001 52.233 23.432 52.233 52.233z">
+            </path>
+            <path
+              d="m510.387 72.934c-1.425-1.807-3.6-2.862-5.901-2.862h-353.807l-6.393-26.072c-5.068-20.67-23.471-35.106-44.753-35.106h-74.022c-14.067.001-25.511 11.445-25.511 25.512s11.444 25.511 25.511 25.511h70.144l13.45 54.857c.988 4.03 5.054 6.496 9.088 5.509 4.031-.988 6.497-5.057 5.509-9.088l-14.374-58.624c-1.11-4.524-5.138-7.684-9.796-7.684h-74.021c-5.78 0-10.482-4.702-10.482-10.482s4.702-10.482 10.482-10.482h74.022c14.34 0 26.741 9.727 30.156 23.656l55.61 226.802c1.348 5.499.117 11.208-3.377 15.662s-8.744 7.009-14.406 7.009c-13.94 0-25.282 11.341-25.282 25.281 0 13.941 11.342 25.282 25.282 25.282h154.963c4.151 0 7.515-3.365 7.515-7.515s-3.364-7.515-7.515-7.515h-154.962c-5.653 0-10.252-4.599-10.252-10.253 0-5.653 4.599-10.252 10.252-10.252 10.309 0 19.869-4.652 26.231-12.762 4.403-5.612 6.828-12.319 7.094-19.236l257.048-.73c3.467-.01 6.477-2.39 7.286-5.761l46.617-194.252c.537-2.236.018-4.597-1.406-6.405zm-42.905 126.64h-45.677l9.726-49.721h47.883zm-48.324-64.75h-47.139l4.318-49.722h52.547zm-58.409 129.777 4.342-49.997h38.461l-9.762 49.903zm-104.534.296-9.838-50.294h38.461l4.359 50.2zm-57.727.164-12.372-50.458h44.947l9.847 50.338zm94.507-130.237-4.318-49.722h72.573l-4.318 49.722zm62.633 15.029-4.318 49.721h-52.692l-4.318-49.721zm-72.095 49.721h-40.096l-9.726-49.721h45.504zm-5.623-64.75h-47.139l-9.726-49.722h52.547zm-49.787 64.75h-45.692l-12.191-49.721h48.157zm71.8 15.029h50.082l-4.346 50.04-41.38.118zm66.473-15.029 4.318-49.721h45.504l-9.726 49.721zm-160.665-114.472 9.726 49.722h-48.902l-12.191-49.722zm246.208 179.24-42.827.122 9.753-49.86h45.01zm31.083-129.518h-48.55l9.726-49.722h50.756z">
+            </path>
+            <path
+              d="m220.419 472.29c20.097 0 36.448-16.35 36.448-36.448 0-20.097-16.35-36.447-36.448-36.447-20.097 0-36.448 16.35-36.448 36.447.001 20.098 16.351 36.448 36.448 36.448zm0-57.865c11.81 0 21.418 9.608 21.418 21.418s-9.608 21.418-21.418 21.418-21.418-9.608-21.418-21.418 9.608-21.418 21.418-21.418z">
+            </path>
+            <path
+              d="m408.535 472.29c20.097 0 36.447-16.35 36.447-36.448 0-20.097-16.35-36.447-36.447-36.447s-36.447 16.35-36.447 36.447c0 20.098 16.35 36.448 36.447 36.448zm0-57.865c11.81 0 21.418 9.608 21.418 21.418s-9.608 21.418-21.418 21.418-21.418-9.608-21.418-21.418 9.608-21.418 21.418-21.418z">
+            </path>
+          </g>
+        </g>
+      </svg> Vendas Aprovadas</h2>
+
+    <p>N&uacute;meros que sinalizam a fideliza&ccedil;&atilde;o e a consolida&ccedil;&atilde;o de nossa marca no
+      cen&aacute;rio online brasileiro.</p>
+  </div>
+</div>
+
+<div class="wrapper-product">
+  <img alt="Produtos" title="Produtos" class="product-image" src="https://static3.tcdn.com.br/img/editor/up/332274/quemsomosprodutos.png" />
+  <div class="product-content">
+    <h2 class="product-content-title">A <strong>Tudo Forte</strong> vende produtos originais e com garantia</h2>
+
+    <p class="product-content-text">Buscando sempre oferecer os melhores produtos com os melhores pre&ccedil;os aos
+      nossos consumidores. A <strong>Tudo Forte</strong> junto com seus parceiros, oferecem o que h&aacute; de melhor
+      para Sua Seguran&ccedil;a, as melhores marcas e pre&ccedil;os.</p>
+  </div>
+</div>
+
+<div class="wrapper-map">
+    <div>
+      <img class="mySlides map-image" src="https://static3.tcdn.com.br/img/editor/up/332274/quemsomosequipe2.png" alt="Equipe Tudo Forte Unidade de Penápolis" title="Equipe Tudo Forte Unidade de Penápolis" />
+      <img class="mySlides map-image" src="https://static3.tcdn.com.br/img/editor/up/332274/quemsomosequipe3.png" alt="Equipe Tudo Forte Unidade de São José do Rio Preto" title="Equipe Tudo Forte Unidade de São José do Rio Preto" />
+      <img class="mySlides map-image" src="https://static3.tcdn.com.br/img/editor/up/332274/quemsomosequipe4.png" alt="Equipe Tudo Forte de Estoque e Logística" title="Equipe Tudo Forte de Estoque e Logística" />
+      <img class="mySlides map-image" src="https://static3.tcdn.com.br/img/editor/up/332274/quemsomosequipe5.png" alt="Equipe Tudo Forte" title="Equipe Tudo Forte" />
+    </div>
+  
+    <iframe allowfullscreen="" aria-hidden="false" class="map" frameborder="0"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3729.721055543186!2d-49.38446028560775!3d-20.80256998612135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bdadfa1f2efca3%3A0xd57da946610b94ac!2sTudo%20Forte!5e0!3m2!1spt-BR!2sbr!4v1592420136944!5m2!1spt-BR!2sbr"
+    style="border:0;" tabindex="0">
+    </iframe>
+</div>
+
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = x.length }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex - 1].style.display = "block";
+  }
+
+  function start(counter) {
+    if (counter < 50) {
+      setTimeout(function () {
+        counter++;
+        plusDivs(1)
+        start(counter);
+      }, 3000);
+    }
+  }
+  start(0);
+
+</script>

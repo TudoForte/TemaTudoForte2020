@@ -1,0 +1,17 @@
+{% if utils.is_mobile %}
+<div class="wrapper-filter-mobile">
+
+    {% element 'snippets/smartfilter-mobile-button' %}
+  
+    <form data-form="filter" class="filter-mobile-order">
+      {% if search.order_options %}
+        <select name="order">
+          {% for option in search.order_options %}
+          <option value="{{ option.value }}">{{ option.name }}</option>
+          {% endfor %}
+        </select>
+      {% endif %}
+    </form>
+
+</div>
+{% endif %}

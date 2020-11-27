@@ -1,0 +1,15 @@
+/**
+ * Newsletter
+ */
+
+.news-button {
+    background: $primary-color;
+    color: $color-white;
+    font: 300 1em $primary-font;
+    text-transform: uppercase;
+
+    &:hover {
+        background: $color-black;
+        color: $color-white;
+    }
+}

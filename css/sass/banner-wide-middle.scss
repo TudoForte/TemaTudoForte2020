@@ -1,0 +1,14 @@
+.banner-wide-middle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+
+@media screen and (max-width: 425px) {
+  .banner-wide-middle {
+    margin: 0px;
+  }
+
+}

@@ -1,0 +1,68 @@
+/**
+ * Base / Settings
+ */
+
+
+$color-black: #000; 
+$color-red: #ef3742;
+$color-gray: #ccc;
+$color-gray-f4: #F4F4F4;
+$color-gray-d7:#dad7d7;
+$color-gray-ab: #f1f1f1ab;
+$color-gray-8c: #8c8c8c;
+$color-gray-eb: #ebebeb;
+$color-gray-f7:#F7F7F7;
+$color-gray-blue: #d6e5f2;
+$color-blue: #0033c6;
+$color-white: #fff;
+$color-green-dark: #04a904;
+
+
+
+$primary-color: #545454;
+$second-color: #0047d9;
+$third-color: #00C500;
+$primary-font: 'Open Sans', sans-serif;
+
+
+
+body {
+    font-family: $primary-font;
+    background: $color-white;
+    color: $primary-color;
+    margin: 0;
+    padding: 0;
+}
+
+// adaptive images
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+// vertical spaces
+.vspace-xs,
+.vspace-sm,
+.vspace-lg {
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.vspace-sm {
+    margin-bottom: 0px;
+}
+
+.vspace-lg {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+button, a{
+    cursor: pointer;
+    outline: 0;
+}
+
+input {
+    outline: 0;
+} 

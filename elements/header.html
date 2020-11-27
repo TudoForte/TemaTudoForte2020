@@ -1,0 +1,69 @@
+{% element 'snippets/banner_top_site' %}
+<div id="header" class="wrapper-header">
+
+{% if utils.is_mobile %}
+    <i class="fa fa-bars" onclick="abrir()"></i>
+{% endif %}
+
+{% if utils.is_mobile %}
+    <a class="customer-cart-link-mobile" data-toggle-sidebar="sidebarCart" onclick="addClassBody()" title="Abrir Carrinho de Compra">
+        <img class="customer-cart-image" rel="prerender" src="{{ asset('img/cart-blue.svg') }}" alt="Icone Carrinho de Compra" title="Icone Carrinho de Compra" />  
+    </a>
+{% endif %}
+
+
+<header class="header">
+    <div class="container-full">
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="wrapper-menu-top">
+                    <li class="menu-top-item">
+                        Solicite um Orçamento <i class="fa fa-caret-down"></i>
+                        {% element 'snippets/budget' %}
+                    </li>
+                    <li class="menu-top-item">
+                        <a href="tel:+551135228255" title="Televendas: (11) 3522-8255">Televendas: (11) 3522-8255</a> <i class="fa fa-caret-down"></i>
+                        {% element 'snippets/contact-phone' %}
+                    </li>
+                    <li class="menu-top-item">
+                        <a href="#" title="Avaliações de Clientes">Avaliações de Clientes</a> <i class="fa fa-caret-down"></i>
+                        {% element 'snippets/customer-reviews' %}
+                    </li>
+                    <li class="menu-top-item">
+                        <a href="#" title="Central de Ajuda e Atendimento">Central de Ajuda e Atendimento</a> <i class="fa fa-caret-down"></i>
+                        {% element 'snippets/help-center' %}
+                    </li>
+                    <li class="menu-top-item">
+                        <a href="https://www.tudoforte.com.br/quem-somos-new" title="Quem Somos">Quem Somos</a> <i class="fa fa-caret-down"></i>
+                        {% element 'snippets/whoweare' %}
+                    </li>
+                    <li class="menu-top-item">
+                        Parceiro Tudo Forte <i class="fa fa-caret-down"></i>
+                        {% element 'snippets/share-store' %}
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row wrapper-header-brand-search-customer">
+            <div class="col-sm-3 wrapper-brand">
+                <a class="brand" href="{{ links.home }}" title="{{ store.name }}" title="Tudo Forte Loja Especializada em Segurança Eletrônica">
+                    <img src="{{ asset('img/logo-tudo-forte.svg') }}" alt="Logo Tudo Forte" title="Tudo Forte Loja Especializada em Segurança Eletrônica" />
+                    <h2 class="brand-logo">Tudo Forte Loja Especializada em Segurança Eletrônica</h2>
+                </a>
+            </div>
+            <div class="col-sm-6">
+                {% element 'snippets/search' %}
+            </div>
+            <div class="col-sm-3">
+                {% element 'snippets/customer' %}
+            </div>
+        </div>
+    </div>
+
+</header>
+{% element 'snippets/mega_menu' %}
+</div>
+
+{% if utils.is_mobile %}
+    {% element 'snippets/menu-mobile-left' %}
+{% endif %}
