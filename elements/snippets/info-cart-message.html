@@ -130,30 +130,3 @@
 </div>
 
 
-<script>
-
-    var modal = document.getElementById("info-cart-message");
-    var btn = document.getElementById("info-cart-message-button");
-    var span = document.getElementsByClassName("close")[0];
-
-
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
-
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-
-      if (event.target == modalFaleAnalista) {
-        modalFaleAnalista.style.display = "none";
-      }
-    }
-
-
-</script>

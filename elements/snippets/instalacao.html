@@ -4,7 +4,6 @@
     max-width: 470px;
     height: 70px;
     font-size: 12px;
-    background-color: #e0edf3;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 10px;
@@ -13,6 +12,7 @@
     line-height: 17px;
     align-items: center;
     position: relative;
+    border: 1px solid #e0edf3;
   }
 
   .installation-input{
@@ -29,12 +29,12 @@
   .installation-title{
     font-weight: 800;
     text-transform: initial;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .installation-price-parceled{
     font-weight: 800;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .installation-credit{
@@ -42,6 +42,10 @@
       bottom: 4px;
       left: 15px;
       font-size: 10px;
+  }
+
+  .instalacao-termo-de-uso-termo{
+    text-decoration: underline;
   }
 
 
@@ -80,7 +84,7 @@
 
     .installation-input{
       position: absolute;
-      top: 15px;
+      top: 13px;
       left: 15px;
     }
 
@@ -138,15 +142,17 @@
     <input class="installation-input" type="checkbox" id="installation" name="installation" onclick="changeInstallation()">
 
     <div class="wrapper-installation-title">
-      <h3 class="installation-title">Aproveite e Contrate</h3>
-      <p>Instalação de Motor de Portão</p>
+      <h3 class="installation-title">Instalação de Motor de Portão</h3>
+      <p>Aproveite e Contrate</p>
     </div>
 
     <div class="wrapper-installation-price">
-      <p class="installation-price-parceled">12x de <span>R$ 114,50</span></p>
-      <p>Valor Total: <span>R$ 299,00</span></p>
+      <p class="installation-price-parceled"><span>R$ 582,22</span> À Vista</p>
+      <p>ou 12x de <span>R$ 52,17</span></p>
     </div>
 
-    <small class="installation-credit">Ao Comprar, Você Aceita as Condições de Instalação de Motor de Portão</small>
+    <small class="installation-credit">Ao Comprar, Você Aceita as <a class="instalacao-termo-de-uso-termo" id="instalacao-termo-uso-button">Condições de Instalação</a> de Motor de Portão</small>
 
 </div>
+
+{% element 'snippets/instalacao-termo-de-uso' %}
