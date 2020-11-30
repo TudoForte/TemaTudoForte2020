@@ -41,7 +41,6 @@
     justify-content: space-between;
     align-content: baseline;
     
-    // padding-left: 0px;
     padding-right: 15px;
 
     &:after {
@@ -55,9 +54,6 @@
     font-size: 14px;
     text-align: justify;
     line-height: 20px;
-    // margin-top: 20px;
-    // margin-bottom: 20px;
-    // margin-left: 20px;
     margin: 20px
   }
 
@@ -87,15 +83,9 @@
 
  .product-catalog{
   width: 245px;
-  // height: 415px;
   margin-top: 0px;
  }
 
-//  .breadcrumb{
-//     margin-bottom: 20px;
-//     padding-left: 15px;
-//     padding-right: 15px;
-//  }
 
  @media screen and (max-width: 1300px) {
     .product-catalog{

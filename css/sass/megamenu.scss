@@ -4,7 +4,7 @@
 
 .navbar {
   
-  background-color: $color-black;
+  background-color: $second-color;
 
   .wrapper-navbar{
     max-width: 1366px;
@@ -56,12 +56,10 @@
   font-weight: bold;
   margin-bottom: -3px;
   color: $second-color;
-  // margin-left: 5px;
 }
 
 
 .navbar a {
-  // float: left;
   font-size: 14px;
   color: $color-white;
   text-align: center;
@@ -100,11 +98,10 @@
 .dropdown:hover .dropbtn {
   border-color: $color-red;
   background-color: $color-white;
-  color: $color-black;
+  color: $second-color;
 
   .navbar-icon{
-    // filter: invert(70%) sepia(50%) saturate(2878%) hue-rotate(200deg) brightness(104%) contrast(97%);
-    filter: invert(70%) sepia(50%) saturate(2878%) hue-rotate(200deg) brightness(0%) contrast(97%);
+    filter: invert(70%) sepia(50%) saturate(2878%) hue-rotate(200deg) brightness(104%) contrast(97%);
   }
 
 }
@@ -113,7 +110,6 @@
   position: absolute;
   display: none;
   background-color: $color-white;
-  // width: 800px;
   box-shadow: 0 5px 15px -5px rgba(0,0,0,0.5);
   border-bottom: 3px solid $color-red;
   z-index: 2;
@@ -183,14 +179,12 @@
   max-width: 1366px;
   margin: 0 auto;
   display: flex;
-  // justify-content: space-between;
   flex-wrap: wrap;
 }
 
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  // width: 33%;
   padding: 10px;
 }
 
@@ -202,7 +196,6 @@
   font-size: 13px;
   float: none;
   color: $color-black;
-  // padding: 16px;
   text-decoration: none;
   display: block;
   text-align: left;

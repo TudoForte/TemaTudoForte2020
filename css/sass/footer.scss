@@ -5,8 +5,6 @@
 .footer {
   background-color: $color-gray-eb;
   font-size: 14px;
-  // border-top: 1px solid $primary-color;
-  // margin-top: 20px;
 
   .wrapper-footer {
     max-width: 1366px;
@@ -112,7 +110,6 @@
 
   .footer-subtitle {
     margin-bottom: 20px;
-    // height: 10px;
     line-height: 20px;
   }
 
@@ -177,7 +174,6 @@
 
   .ebit{
     width:75px;
-    // margin-top:5px
   }
 
   .google{
@@ -191,15 +187,6 @@
   .store-security-item > a > img {
     width: 120px;
   }
-
-  // .wrapper-contact{
-  //   margin-top: 40px;
-  //   padding: 30px;
-  // }
-  
-  // .footer-title.-telesales{
-  //   margin-top: 0px;
-  // }
 
   .wrapper-whatsapp{
     width: 100%;
@@ -237,13 +224,6 @@
 @media screen and (max-width: 580px) {
   .footer {
 
-    // .-telesales {
-    //   display: none;
-    // }
-
-    // .-whatsapp {
-    //   display: none;
-    // }
 
     .footer-title-brands {
       display: none;
@@ -266,8 +246,6 @@
     }
 
     .wrapper-store-security{
-      // // justify-content: space-between;
-      // align-items: unset;
       flex-direction: row-reverse;
       justify-content: flex-end;
       flex-wrap: wrap;

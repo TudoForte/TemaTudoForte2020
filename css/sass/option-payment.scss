@@ -1,13 +1,11 @@
 .wrapper-payment {
   margin-top: 20px;
-  // margin-bottom: 20px;
   margin-left: 15px;
   margin-right: 15px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  // box-shadow: rgb(227, 233, 243) 0px 2px 6px 0px;
 }
 
 .wrapper-payment-credit {
@@ -73,7 +71,6 @@
 .credit-list-item:nth-child(11) {
   background-color: $color-gray-ab;
 }
-
 
 .list-item-featured{
   color: $third-color;
@@ -177,8 +174,6 @@
   .payment-bank-slip-title > span {
     display: flex;
     align-items: baseline;
-    // flex-direction: column;
-    // margin-left: 10px;
   }
 
   .payment-bank-transfer-title > span {
@@ -202,7 +197,6 @@
 
   .wrapper-payment-bank-slip {
     padding: 0px;
-    // width: 50%;
   }
 
   .wrapper-payment-bank-transfer {
@@ -212,14 +206,10 @@
 
   .payment-bank-transfer-text {
     display: none;
-    // line-height: 18px;
-    // font-size: 12px;
   }
 
   .payment-bank-slip-text {
     display: none;
-    // line-height: 18px;
-    // font-size: 12px;
   }
 }
 
@@ -259,27 +249,6 @@
     flex-direction: row;
     height: unset;
   }
-
-  // .credit-list-item:nth-child(6) {
-  //   background-color: unset;
-  // }
-  
-  // .credit-list-item:nth-child(7) {
-  //   background-color: $color-gray-ab;
-  // }
-
-  // .credit-list-item:nth-child(8) {
-  //   background-color: unset;
-  // }
-  
-  // .credit-list-item:nth-child(9) {
-  //   background-color: $color-gray-ab;
-  // }
-
-  // .credit-list-item:nth-child(10) {
-  //   background-color: unset;
-  // }
-  
 
 }
 

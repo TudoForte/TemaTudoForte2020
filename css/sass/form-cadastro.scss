@@ -341,10 +341,7 @@
   text-align: left;
   color: #474e5f;
 }
-.page-register h2 {
-  // font-size: 1rem;
-  // text-align: left;
-}
+
 .page-register .breadcrumb {
   margin: -30px 0 40px -5px;
   font-size: 14px;
@@ -530,17 +527,7 @@
     width: 34%;
   }
 }
-// label[for='endereco_cobranca_diferente'] {
-//   font-size: 18px;
-//   font-weight: 700;
-//   color: #474e5f;
-//   margin-left: 12px;
-// }
-// @media (max-width: 375px) {
-//   label[for='endereco_cobranca_diferente'] {
-//     font-size: 15px;
-//   }
-// }
+
 .botoes_personalizados_enviar_img {
   width: 220px;
   height: 52px;
@@ -641,10 +628,6 @@ fieldset {
 
 }
 
-.obriga{
-  // margin-left: -5px;
-}
-
 @media (max-width: 600px) {
   .board{
     flex-direction: column;
@@ -665,8 +648,6 @@ fieldset {
     padding-right: 20px;
   }
 }
-
-
 
 
 @media (max-width: 480px) {

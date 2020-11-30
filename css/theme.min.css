@@ -897,6 +897,7 @@ h6 {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .product {
   filter: alpha(opacity=70);
   -webkit-transition: opacity 0.4s;
@@ -1661,7 +1662,7 @@ input[type=number]::-webkit-outer-spin-button {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border: 0px;
-  background-color: #000;
+  background-color: #0047d9;
   color: #fff;
 }
 .wrapper-form button .search-button-image {
@@ -1950,7 +1951,7 @@ input[type=number]::-webkit-outer-spin-button {
  * MegaMenu
  */
 .navbar {
-  background-color: #000;
+  background-color: #0047d9;
 }
 .navbar .wrapper-navbar {
   max-width: 1366px;
@@ -2039,10 +2040,10 @@ input[type=number]::-webkit-outer-spin-button {
 .dropdown:hover .dropbtn {
   border-color: #ef3742;
   background-color: #fff;
-  color: #000;
+  color: #0047d9;
 }
 .dropdown:hover .dropbtn .navbar-icon {
-  filter: invert(70%) sepia(50%) saturate(2878%) hue-rotate(200deg) brightness(0%) contrast(97%);
+  filter: invert(70%) sepia(50%) saturate(2878%) hue-rotate(200deg) brightness(104%) contrast(97%);
 }
 
 .dropdown-content {
@@ -2797,7 +2798,6 @@ th:last-child {
     appearance: none;
     font-size: 14px;
     border: 1px solid #545454;
-    /* text-transform: uppercase; */
     outline: 0;
   }
   .filter-button:hover {
@@ -4727,9 +4727,6 @@ fieldset {
   width: 130px;
 }
 
-/* .banner-product-brands-image{
-  width: 130px;
-} */
 .wrapper-banner-product-brands-text {
   text-align: center;
 }
@@ -4837,7 +4834,6 @@ fieldset {
   padding: 30px;
   box-shadow: #e3e9f3 0px 0px 3px 0;
   border-radius: 5px;
-  /* margin-top: 5px; */
   right: -60px;
   opacity: 0;
   z-index: -55;
@@ -4983,7 +4979,6 @@ fieldset {
 
   .message-cookie-button {
     width: 95%;
-    /* margin-bottom: 5px; */
     text-align: center;
   }
 
