@@ -23,6 +23,7 @@
     display: none;
 }
 
+
 .board_htm table{
     width: 100%;
 }
@@ -126,6 +127,11 @@
 
 @media(max-width: 600px) {
 
+.board_htm{
+  height: 300px;
+}
+
+
 .section > h2 {
     text-align: left;
     line-height: normal; 
@@ -177,7 +183,6 @@
 
   .board{
       margin: 0px;
-      height: 300px;
       overflow: hidden;
   }
 

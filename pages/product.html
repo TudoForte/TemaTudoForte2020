@@ -49,9 +49,9 @@
             </div>
 
         
-            <!-- {% if product.id == '9714' %}
+            {% if product.id == '9714' %}
                 {% element 'snippets/instalacao' %}
-            {% endif %} -->
+            {% endif %}
 
            
             {% element 'snippets/page_product_price' %}
@@ -160,7 +160,8 @@
 <div id="payment"></div>
 {% element 'snippets/option_payment' %}
 
-<div id="rating" class="page-content product-wrapper">
+<div id="rating"></div>
+<div class="page-content product-wrapper">
     <div class="NETREVIEWS_PRODUCT_REVIEWS" data-product-id="{{ product.id }}" data-product-price="{{ product.price }}" data-product-name="{{ product.name }}" data-product-url="{{ product.link }}"></div>
 </div>
 
@@ -185,7 +186,7 @@
     }
 
     .netreviews_certification{
-        z-index: 1;
+        z-index: 0;
     }
 
     @media screen and (max-width: 600px) {
@@ -210,3 +211,9 @@
 
 
 
+{% element 'snippets/cart-float' %}
+
+
+{% if utils.is_mobile %}
+    {% element 'snippets/cart-float-mobile' %}
+{% endif %}

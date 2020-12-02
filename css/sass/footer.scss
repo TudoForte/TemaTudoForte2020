@@ -5,6 +5,8 @@
 .footer {
   background-color: $color-gray-eb;
   font-size: 14px;
+  position: relative;
+  z-index: -1;
 
   .wrapper-footer {
     max-width: 1366px;

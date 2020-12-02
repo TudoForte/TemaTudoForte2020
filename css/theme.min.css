@@ -535,6 +535,8 @@ h6 {
 .footer {
   background-color: #ebebeb;
   font-size: 14px;
+  position: relative;
+  z-index: -1;
 }
 .footer .wrapper-footer {
   max-width: 1366px;
@@ -2188,7 +2190,6 @@ input[type=number]::-webkit-outer-spin-button {
   visibility: hidden;
   background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
-  z-index: 0;
 }
 
 .sidebar {
@@ -2197,7 +2198,7 @@ input[type=number]::-webkit-outer-spin-button {
   top: 0;
   right: 0;
   width: 425px;
-  z-index: 6;
+  z-index: 10;
 }
 
 .sidebar-content {
@@ -4606,6 +4607,10 @@ fieldset {
 }
 
 @media (max-width: 600px) {
+  .board_htm {
+    height: 300px;
+  }
+
   .section > h2 {
     text-align: left;
     line-height: normal;
@@ -4657,7 +4662,6 @@ fieldset {
 
   .board {
     margin: 0px;
-    height: 300px;
     overflow: hidden;
   }
 
