@@ -1,18 +1,19 @@
 <ul class="header-customer">
-    <span class="tray-hide" data-logged-user="true">
-      <li class="header-customer-user-logged">Olá <br/> <span data-customer="name"></span></li>
+    <li class="tray-hide" data-logged-user="true">
+      <span class="header-customer-user-logged">Olá <br/> <span data-customer="name"></span></span>
       {% element 'snippets/customer-menu' %}
-    </span>
+    </li>
 
-    <span class="tray-hide" data-logged-user="false">
-      <li class="wrapper-customer-user">
-        <img class="customer-user-image" rel="prerender" src="{{ asset('img/user.svg') }}" alt="Icone Usuário" title="Icone Usuário"/>
+    <li class="tray-hide" data-logged-user="false">
+      <span class="wrapper-customer-user">
+        <img width="30" height="30" class="customer-user-image" rel="prerender" src="{{ asset('img/user.svg') }}" alt="Icone Usuário" title="Icone Usuário"/>
         <a href="{{ links.login }}" title="Acesse Minha Conta ou Cadastre-se">Entre ou Cadastre-se</a>
-      </li>
-    </span>
+      </span>
+    </li>
+
     <li class="wrapper-customer-cart">
         <a class="customer-cart-link" data-toggle-sidebar="sidebarCart">
-          <img class="customer-cart-image" rel="prerender" src="{{ asset('img/cart-blue.svg') }}" alt="Icone Carrinho" title="Icone Carrinho"/>  
+          <img width="30" height="30" class="customer-cart-image" rel="prerender" src="{{ asset('img/cart-blue.svg') }}" alt="Icone Carrinho" title="Icone Carrinho"/>  
           <span class="customer-cart-value" data-cart="amount"></span>
         </a>
     </li>

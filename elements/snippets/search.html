@@ -1,5 +1,8 @@
 <form class="wrapper-form" role="form" action="{{ links.search }}">
     <input type="hidden" name="loja" value="{{ store.id }}">
-        <input type="search" placeholder="Digite o que Deseja Encontrar" name="palavra_busca">
+        <label>
+            <span>Busca</span>
+            <input type="search" placeholder="Digite o que Deseja Encontrar" name="palavra_busca">
+        </label>
         <button class="search-button"><img class="search-button-image" src="{{ asset('img/search.svg') }}" alt="Search"/></button>
 </form>

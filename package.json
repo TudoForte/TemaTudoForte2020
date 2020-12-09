@@ -29,6 +29,6 @@
     "owl.carousel": "^2.3.4"
   },
   "scripts": {
-    "compile:sass": "sass css/sass/theme.min.scss css/theme.min.css"
+    "compile:sass": "sass css/sass/theme.min.scss css/theme.min.css --style compressed"
   }
 }

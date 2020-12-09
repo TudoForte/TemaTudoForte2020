@@ -9,7 +9,7 @@
     {{ tray.styles }}
     <link rel="stylesheet" href="{{ asset('css/bootstrap/font-awesome.css') }}">
     <link rel="stylesheet" href="{{ asset('css/bootstrap/bootstrap-grid.min.css') }}">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
@@ -26,11 +26,7 @@
 <body>
     {{ googleTagManager.top(pages.current, tagManagerData) }}
 
-    {% if utils.is_mobile %}
     {% element 'header' %}
-    {% else %}
-    {% element 'header' %}
-    {% endif %}
 
     {% if pages.current == 'home' %}
 
@@ -94,7 +90,7 @@
     <script rel="preload" as="script" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script rel="preload" as="script" src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script rel="preload" as="script" src="{{ asset('js/theme.min.js') }}"></script>
-
+    
 
     {% element 'snippets/sharedCart' %}
     {% element 'snippets/scrooll-up' %}

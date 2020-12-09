@@ -2,6 +2,11 @@
     {% element 'snippets/breadcrumb' %}
 </div>
 
+{% if category.name == 'Motor de Portão' %}
+    {% element 'snippets/banner_category_motor' %}
+{% endif %}
+
+
 {% if products|length > 0 %}
 
     {% if not utils.is_mobile %}

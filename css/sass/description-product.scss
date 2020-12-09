@@ -29,7 +29,7 @@
 }
 
 .board_htm p{
-    margin: 0px !important;
+    // margin: 0px !important;
 }
 
 .section img {
@@ -127,10 +127,9 @@
 
 @media(max-width: 600px) {
 
-.board_htm{
-  height: 300px;
-}
-
+// .board{
+//   height: 180px;
+// }
 
 .section > h2 {
     text-align: left;
