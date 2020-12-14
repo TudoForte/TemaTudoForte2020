@@ -32,14 +32,13 @@
   .message-cookie-button {
       color: #fff;
       cursor: pointer;
-      background-color: #00C500;
+      background-color: $color-green-dark;
       padding: 10px;
   }
 
   .message-cookie-button > a {
       color: #fff;
       text-transform: uppercase;
-      letter-spacing: 1px
   }
 
   @media(max-width: 600px){

@@ -21,6 +21,7 @@
   right: 0;
   width: 425px;
   z-index: 10;
+  
 }
 
 .sidebar-content{
@@ -195,14 +196,14 @@
   font-weight: 600;
   border: 0;
   background-color: $color-gray-f4;
-  color: $color-gray-8c;
+  color: $primary-color;
   width: 50%;
   height: 60px;
   border-radius: 5px;
 }
 
 .-checkout{
-  background-color: $third-color;
+  background-color: $color-green-dark;
   color: $color-white;
   margin-left: 20px;
   display: flex;
