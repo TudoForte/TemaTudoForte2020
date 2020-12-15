@@ -1,0 +1,35 @@
+<ul class="wrapper-info-cart">
+  <li class="info-cart-item">
+    <img rel="prerender" class="info-cart-item-image" src="{{ asset('img/icon_warranty.svg') }}" alt="Icone Ajuda de Especialistas" title="Icone Ajuda de Especialistas"/>
+    <span>
+      <b class="info-cart-item-text-destaque">
+        <a id="info-cart-message-fale-analista-instalacao-button" title="Fale com um Analista" target="_blank" rel="noreferrer">
+          Ajuda de Especialista</a>
+      </b>
+      Tire Suas Dúvidas Sobre a Instalação.</span>
+  </li>
+</ul>
+
+{% element 'snippets/info-cart-message-fale-analista-instalacao' %}
+
+<script>
+  var modalFaleAnalistaInstalacao = document.getElementById("info-cart-message-fale-analista-instalacao");
+  var btnFaleAnalistaInstalacao = document.getElementById("info-cart-message-fale-analista-instalacao-button");
+  var spanFaleAnalistaInstalacao = document.getElementsByClassName("close-fale-analista-instalacao")[0];
+
+  
+
+  btnFaleAnalistaInstalacao.onclick = function() {
+    modalFaleAnalistaInstalacao.style.display = "block";
+  }
+  
+  spanFaleAnalistaInstalacao.onclick = function() {
+      modalFaleAnalistaInstalacao.style.display = "none";
+  }
+
+  modalFaleAnalistaInstalacao.onclick = function() {
+    modalFaleAnalistaInstalacao.style.display = "none";
+  }
+
+
+</script>

@@ -1,0 +1,166 @@
+.wrapper-info-cart-message-fale-analista-instalacao {
+  display: none; 
+  position: fixed; 
+  z-index: 10; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.info-cart-message-fale-analista-instalacao-content {
+  background-color: #fefefe;
+  margin: 10% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 840px;
+  height: 411px;
+  padding: 25px;
+  position: relative;
+  font-size: 18px;
+}
+
+.info-cart-message-fale-analista-instalacao-title{
+  font-weight: bold;
+  text-align: center;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.info-cart-message-fale-analista-instalacao-subtitle{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.info-cart-message-fale-analista-instalacao-text{
+  margin-top: 10px;
+  margin-bottom: 11px;
+  text-align: center;
+}
+
+.info-cart-message-fale-analista-instalacao-list{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-cart-message-fale-analista-instalacao-list-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 24px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.info-cart-message-fale-analista-instalacao-list-item > strong{
+  font-weight: 600;
+}
+
+.info-cart-message-fale-analista-instalacao-list-item-image{
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
+}
+
+.info-cart-message-fale-analista-instalacao-whatsapp{
+  width: 75%;
+  display: flex;
+  font-size: 24px;
+  font: bold 1.1em "Open Sans", sans-serif;
+  text-transform: uppercase;
+  margin-top: 20px;
+  border: 1px solid #8c8c8c;
+  padding: 10px;
+  justify-content: center;
+  margin: 20px auto;
+  text-decoration: none;
+}
+
+.info-cart-message-fale-analista-instalacao-whatsapp:hover{
+  text-decoration: underline;
+}
+
+.info-cart-message-fale-analista-instalacao-whatsapp > i {
+  font-size: 24px;
+  color: #25D366;
+  margin-left: 10px;
+}
+
+.close-fale-analista-instalacao {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.close-fale-analista-instalacao:hover,
+.close-fale-analista-instalacao:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.info-cart-message-fale-analista-instalacao-credit{
+  font-size: 11px;
+  text-align: center;
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .info-cart-message-fale-analista-instalacao-content {
+    margin: 25% auto;
+    font-size: 14px;
+    line-height: 16px;
+    height: 421px;
+  }
+
+  .info-cart-message-fale-analista-instalacao-title{
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .info-cart-message-fale-analista-instalacao-list{
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .info-cart-message-fale-analista-instalacao-whatsapp{
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .info-cart-message-fale-analista-instalacao-text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  .info-cart-message-fale-analista-instalacao-title{
+    font-size: 16px;
+  }
+
+  .info-cart-message-fale-analista-instalacao-text{
+    font-size: 14px;
+  }
+
+  .info-cart-message-fale-analista-instalacao-whatsapp{
+    font-size: 14px;
+  }
+
+}

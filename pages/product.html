@@ -1,5 +1,12 @@
+<div class="wrapper-banner">
+ 
+    {{ banner.extra35 }}
+       
+</div>
+
 <div id="product-container" data-product="{{ product.id }}">
     <div id="title" class="wrapper-product-head">
+      
         {% element 'snippets/breadcrumb' %}
 
         {% if not utils.is_mobile %}
@@ -7,6 +14,7 @@
         {% endif %}
     
     </div>
+
     <div class="row">
         <div class="col-md-6 wrapper-product-info-left">
 
@@ -84,23 +92,26 @@
             </div>
 
 
-            <div class="wrapper-shipping">
-                <i class="fa fa-times shipping-button-close" onclick="cleanShipping()"></i>
-                <span class="shipping-title">Calcule o Frete e o Prazo de Entrega</span>
-                <div>
-                    <input class="wrapper-shipping-input" id="shipping"  
-                    placeholder="Digite o CEP" 
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Digite o CEP'" type="text"  />
-                    <button class="wrapper-shipping-button" onclick="getShipping()">Calcular Frete</button>
-                    <a class="shipping-dont-cep" target="_blank" rel="noreferrer"  href="http://www.buscacep.correios.com.br/sistemas/buscacep/default.cfm">Não Sei Meu CEP</a>
+        
+            {% if product.id == '12242' %}
+                {% element 'snippets/info-cart-instalacao' %}
+            {% else %}
+
+                <div class="wrapper-shipping">
+                    <i class="fa fa-times shipping-button-close" onclick="cleanShipping()"></i>
+                    <span class="shipping-title">Calcule o Frete e o Prazo de Entrega</span>
+                    <div>
+                        <input class="wrapper-shipping-input" id="shipping"  
+                        placeholder="Digite o CEP" 
+                        onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'Digite o CEP'" type="text"  />
+                        <button class="wrapper-shipping-button" onclick="getShipping()">Calcular Frete</button>
+                        <a class="shipping-dont-cep" target="_blank" rel="noreferrer"  href="http://www.buscacep.correios.com.br/sistemas/buscacep/default.cfm">Não Sei Meu CEP</a>
+                    </div>
                 </div>
-            </div>
 
-
-            {% element 'snippets/info-cart' %}
-
-           
+                {% element 'snippets/info-cart' %}
+            {% endif %}    
 
         </div>
     </div>
