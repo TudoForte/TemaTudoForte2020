@@ -42,10 +42,12 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-table {
-	border-spacing: 0;
-}
 
+.titCatalogo {
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
 
 /*
  * Tray Commerce Reset

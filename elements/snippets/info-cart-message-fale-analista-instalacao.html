@@ -6,7 +6,7 @@
 
       <h3 class="info-cart-message-fale-analista-instalacao-title">Fale com um Especialista</h3>
 
-      <p class="info-cart-message-fale-analista-instalacao-text">Tire Suas Dúvidas a Instalação</p>
+      <p class="info-cart-message-fale-analista-instalacao-text">Tire Suas Dúvidas Sobre a Instalação</p>
 
       <ul class="info-cart-message-fale-analista-instalacao-list">
           <li class="info-cart-message-fale-analista-instalacao-list-item"><strong>São Paulo</strong>         <a href="tel:+551135228255" title="São Paulo (11) 3522-8255">(11) 3522-8255</a></li>
@@ -26,3 +26,28 @@
   </div>
 
 </div>
+
+
+
+<script>
+  var modalFaleAnalistaInstalacao = document.getElementById("info-cart-message-fale-analista-instalacao");
+  var btnFaleAnalistaInstalacao = document.getElementById("info-cart-message-fale-analista-instalacao-button");
+  var spanFaleAnalistaInstalacao = document.getElementsByClassName("close-fale-analista-instalacao")[0];
+
+  
+  btnFaleAnalistaInstalacao.onclick = function() {
+    modalFaleAnalistaInstalacao.style.display = "block";
+  }
+  
+  spanFaleAnalistaInstalacao.onclick = function() {
+      modalFaleAnalistaInstalacao.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modalFaleAnalistaInstalacao) {
+      modalFaleAnalistaInstalacao.style.display = "none";
+    }
+  }
+
+
+</script>

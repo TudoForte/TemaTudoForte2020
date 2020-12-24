@@ -1,12 +1,18 @@
 {% if products|length > 0 %}
 
+   
 
-            {% for product in products %}
-                
-                <div class="product product-catalog">
-                    {% element 'snippets/product' {"product": product} %}
-                </div>  
-            {% endfor %}    
-        
-    
+    {% for product in products %}
+
+        {% if product.category_id == '1395' or product.category_id == '878'   %}
+       
+        {% else %}
+        <div class="product product-catalog">
+            {% element 'snippets/product' {"product": product} %}
+        </div>
+        {% endif %}
+
+
+    {% endfor %}
+
 {% endif %}

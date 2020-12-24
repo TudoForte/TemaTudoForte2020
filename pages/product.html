@@ -1,10 +1,7 @@
-<div class="wrapper-banner">
- 
-    {{ banner.extra35 }}
-       
-</div>
-
 <div id="product-container" data-product="{{ product.id }}">
+       
+{% element 'snippets/wrapper-banner-product-top' %}
+
     <div id="title" class="wrapper-product-head">
       
         {% element 'snippets/breadcrumb' %}
@@ -19,6 +16,7 @@
         <div class="col-md-6 wrapper-product-info-left">
 
             <div class="swiper-container wrapper-top">
+
                 <div class="swiper-wrapper">
 
                 </div>
@@ -44,9 +42,7 @@
         </div>
         <div class="col-md-6 wrapper-product-info-right">
 
-            <div class="product-labels">
-                {{ productHelper.labels() }}
-            </div>
+            {% element 'snippets/product-labels' %}
 
             <a onclick="jump('rating')"><div id='rating-{{ product.id }}' class="wrapper-rating"></div></a>
 
@@ -56,13 +52,16 @@
                 </p>
             </div>
 
-            
-             
+        
+
+            {% if product.stock <= 0 %}
+                {% element 'snippets/product-available' %}
+            {% endif %}
+
             <!-- {% element 'snippets/tell-me' %} -->
         
             {% element 'snippets/wrapper-instalacao' %}
           
-
             {% element 'snippets/page_product_price' %}
 
             <div class="wrapper-variants">
@@ -111,6 +110,7 @@
                 </div>
 
                 {% element 'snippets/info-cart' %}
+
             {% endif %}    
 
         </div>
@@ -217,9 +217,6 @@
 <script charset="utf-8" rel="preload" as="script" defer
     src="//cl.avis-verifies.com/br/cache/5/a/4/5a440199-2c8f-3324-9d23-8788cc5b3ec9/AWS/PRODUCT_API/tag.min.js">
 </script>
-
-
-
 
 
 <!-- 

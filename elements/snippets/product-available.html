@@ -1,0 +1,83 @@
+<style>
+  .wrapper-product-available{
+    display: flex;
+    max-width: 470px;
+    height: 70px;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 17px;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    box-shadow: #e3e9f3 0px 2px 6px 0px;
+  }
+  
+  .product-available-button{
+    padding: 5px 10px;
+    background-color: #00c500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 11px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+  }
+  
+  .product-available-button:hover{
+    text-decoration: underline;
+    color: #fff;
+    border: 1px solid green;
+    color: green;
+    background-color: #fff;
+  }
+
+  .wrapper-product-available-price{
+    margin-left: auto;  
+  }
+
+  .product-available-title{
+    font-weight: 800;
+    text-transform: initial;
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 425px) {
+
+    .wrapper-product-available{
+      flex-direction: column;
+      justify-content: center;
+      height: 80px;
+    }
+
+    .product-available-title{
+      font-size: 16px;
+      margin-bottom: 0px;
+      padding-top: unset;
+    } 
+
+    .product-available-button{
+      margin-top: 5px;
+    }
+  
+  }
+
+
+</style>
+
+<div class="wrapper-product-available">
+  
+  
+    <h3 class="product-available-title">Avise-me Quando Chegar</h3>
+    <a class="product-available-button" onclick="whatsappUrl()" >Solicitar Produto Pelo WhatsApp</a>
+
+</div>
+
+<script>
+
+  let productWhatsId = document.getElementsByClassName('product-details')[0].textContent.replace('Código: ', '');
+
+  function whatsappUrl() {
+    window.open(`https://api.whatsapp.com/send?phone=551135228255&text=Produto%20Sem%20Estoque%20Tenho%20Interesse%20Em%20Comprar%20Este%20Produto=${productWhatsId}`);
+  }
+</script>

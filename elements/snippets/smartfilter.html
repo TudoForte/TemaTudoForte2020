@@ -35,6 +35,10 @@
               <h3 class="title-filter">{{ myFilter.title }}</h3>
               <ul>
               {% for item in myFilter.items %}
+
+                {% if item.title == 'ML' or item.title == 'CN e Rotativos' or item.title == 'CN' %}
+                {% else %}
+
                   <li class="filter-item">
                       {% if item.type == "link" %}
                           <a href="{{ item.url }}" title="{{ item.title }}"><h2>{{ item.title }}</h2></a>
@@ -48,6 +52,9 @@
                           </label>
                       {% endif %}
                   </li>
+                
+                {% endif %}
+
               {% endfor %}
               </ul>
   
