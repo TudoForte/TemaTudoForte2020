@@ -6,3 +6,10 @@
   justify-content: center;
   color: white;
 }
+
+
+@media(max-width: 600px){
+  .wrapper-banner-category{
+    display: none;
+  }
+}

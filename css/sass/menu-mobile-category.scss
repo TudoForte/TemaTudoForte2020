@@ -3,10 +3,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+  height: 100px;
 }
 
 .menu-mobile-category-item{
-  width: 32%;
+  // width: 32%;
+  height: 60px;
   background-color: $second-color;
   display: flex;
   flex-direction: column;
@@ -17,12 +19,16 @@
   text-align: center;
   color: $color-white;
   padding: 10px;
-  margin-bottom: 5px;
+  // margin-bottom: 5px;
   text-decoration: none;
 }
 
 .menu-mobile-category-item:hover{
   color: $color-white;
+}
+
+.pagination-mobile{
+  top:80px;
 }
 
 
