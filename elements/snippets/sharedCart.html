@@ -39,7 +39,7 @@
     margin-bottom: 20px;
   }
 
-  .sharedcart-form input {
+  .sharedcart-form-input {
     outline: 0;
     width: 100%;
     border: 0;
@@ -92,6 +92,8 @@
     text-decoration: none;
     display: none;
   }
+
+
   .sharedcart-buttons-whats:hover{
     color: #fff; 
   }
@@ -119,6 +121,7 @@
     color: #b3b3b3;
     font-size: 12px;
   }
+
   .sharedcart-form .message a {
     color: #4CAF50;
     text-decoration: none;
@@ -131,6 +134,13 @@
     color: gray;
     cursor: pointer;
   }
+
+  
+  .sharedcart-input-whats{
+    display: none;
+    margin-top: 10px;
+  }
+  
 
 
   @media screen and (max-width: 600px){
@@ -165,15 +175,17 @@
 
       <img width="200" height="66" src="{{ asset('img/parceiro-tudoforte.svg') }}" alt="Logo Parceiro Tudo Forte" title="Logo Parceiro Tudo Forte">
 
-      <input id="partnerId" type="text" placeholder="Insira Aqui Seu Código de Parceiro" onkeyup="onlyNumbers(this);"/>
+      <input class="sharedcart-form-input" id="partnerId" type="text" placeholder="Insira Aqui Seu Código de Parceiro" onkeyup="onlyNumbers(this);"/>
 
       <button onclick="createLinkCart()">Gerar Orçamento <i class="fa fa-share-alt"></i></button>
 
       <div class="wrapper-sharedcart-buttons">
         <a id="sharedcart-buttons-copy" class="sharedcart-buttons-copy" onclick="copyToClipboard()" title="Copiar link com Código de Parceiro">Copiar</a>
-        <a id="sharedcart-buttons-whats" class="sharedcart-buttons-whats" target="_blank" rel="noreferrer" title="Compartilhar no WhatsApp link com Código de Parceiro">Compartilhar WhatsApp</a>
         <a id="sharedcart-buttons-finish" class="sharedcart-buttons-finish" target="_blank" rel="noreferrer" title="Finalizar link com Código de Parceiro">Finalizar</a>
       </div>
+
+      <a id="sharedcart-buttons-whats" class="sharedcart-buttons-whats" target="_blank" rel="noreferrer" title="Compartilhar no WhatsApp link com Código de Parceiro" onclick="showInputWhats()">Compartilhar WhatsApp</a>
+      <input class="sharedcart-form-input sharedcart-input-whats" id="sharedcart-input-whats" type="text" placeholder="17 99224-2020" />
 
       <p class="sharedcart-partner-link">
         Ainda não é Parceiro Tudo Forte? <a target="_blank" rel="noreferrer" href="https://www.parceirotudoforte.com.br/" title="Clique Aqui para Saber Mais Sobre Programa de Parceiro Tudo Forte">Saiba Mais</a>
@@ -183,3 +195,11 @@
   </div>
 </div>
 
+
+<script>
+  function showInputWhats(){
+    document.getElementById("sharedcart-input-whats").style.display = "block";
+  }
+
+
+</script>
