@@ -52,13 +52,14 @@
                 </p>
             </div>
 
-        
 
             {% if product.stock <= 0 %}
                 {% element 'snippets/product-available' %}
             {% endif %}
 
-            <!-- {% element 'snippets/tell-me' %} -->
+            {% if product.id == '2726' %}
+                {% element 'snippets/tell-me' %}
+            {% endif %}
         
             {% element 'snippets/wrapper-instalacao' %}
           
@@ -67,7 +68,7 @@
             <div class="wrapper-variants">
             </div>
 
-            <button class="payment-methods-link" onclick="jump('payment')">Formas de Pagamento</button>
+            <button class="payment-methods-link" onclick="btnPayment()">Formas de Pagamento</button>
 
             <div class="wrapper-add-cart -visible">
 
@@ -170,7 +171,7 @@
 </div>
 
 <div id="payment"></div>
-{% element 'snippets/option_payment' %}
+{% element 'snippets/modal-payment' %}
 
 <div id="rating"></div>
 <div class="page-content product-wrapper">

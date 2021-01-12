@@ -79,18 +79,21 @@
       padding-top: unset;
       width: 100%;
     }
-
-  
   }
-
-
+  
 </style>
 
 <div class="wrapper-tell-me">
-  
-   
-      <h3 class="tell-me-title">Gostaria de adquirir a instalação junto com este produto?</h3>
-      <a class="tell-me-button" href="#">Solicitar Orçamento Agora</a>
-
-
+    <h3 class="tell-me-title">Gostaria de Adquirir a Instalação Junto com este Produto?</h3>
+    <a class="tell-me-button" onclick="whatsppUrlTellMe()">Solicitar Orçamento Agora</a>
 </div>
+
+
+<script>
+
+  let productTellmeId = document.getElementsByClassName('product-details')[0].textContent.replace('Código: ', '');
+
+  function whatsppUrlTellMe() {
+    window.open(`https://api.whatsapp.com/send?phone=551135228255&text=Tenho%20Interesse%20de%20Adquirir%20a%20Instalacao%20com%20este%20Produto=${productTellmeId}`);
+  }
+</script>

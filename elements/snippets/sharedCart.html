@@ -21,7 +21,6 @@
       z-index: 5;
   }
 
-
   .sharedcart-form {
     position: absolute;
     top: 25%;
@@ -46,14 +45,15 @@
     margin: 0 0 15px;
     padding: 15px;
     box-sizing: border-box;
-    font-size: 14px;
     border: 1px solid #f2f2f2;
   }
+
   .sharedcart-form button {
     text-transform: uppercase;
     outline: 0;
     background: #00C500;
     width: 100%;
+    height: 45px;
     border: 0;
     padding: 15px;
     color: #FFFFFF;
@@ -74,6 +74,10 @@
   }
 
   .sharedcart-buttons-copy{
+    width: 47.5%;
+    height: 45px;
+    font-size: 14px;
+    line-height: 23px;
     padding: 10px;
     background-color: #0047d9;
     color: #fff;
@@ -86,6 +90,10 @@
   }
 
   .sharedcart-buttons-whats{
+    width: 47.5%;
+    height: 45px;
+    line-height: 23px;
+    font-size: 14px;
     padding: 10px;
     background-color: #00C500;
     color: #fff;
@@ -99,6 +107,10 @@
   }
 
   .sharedcart-buttons-finish{
+    width: 47.5%;
+    height: 45px;
+    line-height: 23px;
+    font-size: 14px;
     padding: 10px;
     background-color: #0047d9;
     color: #fff;
@@ -138,7 +150,10 @@
   
   .sharedcart-input-whats{
     display: none;
-    margin-top: 10px;
+    margin: 0px;
+    width: 52.5%;
+    height: 45px;
+    line-height: 45px;
   }
   
 
@@ -180,12 +195,14 @@
       <button onclick="createLinkCart()">Gerar Orçamento <i class="fa fa-share-alt"></i></button>
 
       <div class="wrapper-sharedcart-buttons">
-        <a id="sharedcart-buttons-copy" class="sharedcart-buttons-copy" onclick="copyToClipboard()" title="Copiar link com Código de Parceiro">Copiar</a>
-        <a id="sharedcart-buttons-finish" class="sharedcart-buttons-finish" target="_blank" rel="noreferrer" title="Finalizar link com Código de Parceiro">Finalizar</a>
+        <a id="sharedcart-buttons-copy" class="sharedcart-buttons-copy" onclick="copyToClipboard()" title="Copiar link com Código de Parceiro">Copiar <i class="fa fa-copy"></i></a>
+        <a id="sharedcart-buttons-finish" class="sharedcart-buttons-finish" target="_blank" rel="noreferrer" href="#" title="Finalizar link com Código de Parceiro">Finalizar</a>
       </div>
 
-      <a id="sharedcart-buttons-whats" class="sharedcart-buttons-whats" target="_blank" rel="noreferrer" title="Compartilhar no WhatsApp link com Código de Parceiro" onclick="showInputWhats()">Compartilhar WhatsApp</a>
-      <input class="sharedcart-form-input sharedcart-input-whats" id="sharedcart-input-whats" type="text" placeholder="17 99224-2020" />
+      <div style="display: flex; justify-content: space-between; margin-top: 15px;">
+        <input class="sharedcart-form-input sharedcart-input-whats" id="sharedcart-input-whats" type="tel" placeholder="(99) 99999-9999" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" title="Número de telefone precisa ser no formato (99) 9999-9999" required="required"  onfocusout="createLinkCartWithPhone()" />
+        <a id="sharedcart-buttons-whats" class="sharedcart-buttons-whats" target="_blank" rel="noreferrer" href="#" title="Compartilhar no WhatsApp link com Código de Parceiro">Enviar <i class="fa fa-whatsapp" style="font-size: 18px;"></i></a>
+      </div>
 
       <p class="sharedcart-partner-link">
         Ainda não é Parceiro Tudo Forte? <a target="_blank" rel="noreferrer" href="https://www.parceirotudoforte.com.br/" title="Clique Aqui para Saber Mais Sobre Programa de Parceiro Tudo Forte">Saiba Mais</a>
@@ -195,11 +212,3 @@
   </div>
 </div>
 
-
-<script>
-  function showInputWhats(){
-    document.getElementById("sharedcart-input-whats").style.display = "block";
-  }
-
-
-</script>

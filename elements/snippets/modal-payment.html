@@ -1,0 +1,81 @@
+<style>
+  .wrapper-modal-payment {
+  display: none; 
+  position: fixed; 
+  z-index: 10; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-payment-content {
+  background-color: #fefefe;
+  margin: 11% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 1000px;
+  height: 411px;
+  padding: 25px;
+  position: relative;
+  font-size: 18px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .modal-payment-content {
+    margin: 40% auto;
+    font-size: 14px;
+    line-height: 16px;
+    height: 340px;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .modal-payment-content {
+    margin: 15% auto;
+    font-size: 14px;
+    line-height: 16px;
+    height: 88%;
+    padding: 0px;
+  }
+}
+
+
+</style>
+
+
+<div id="modal-payment" class="wrapper-modal-payment">
+  
+  <div class="modal-payment-content">
+
+    <span class="close modal-payment-close">&times;</span>
+
+    {% element 'snippets/option_payment' %}
+      
+  </div>
+
+</div>
+
+
+
+<script>
+  var modalPayment = document.getElementById("modal-payment");
+  var btnPayment = document.getElementById("modal-payment-button");
+  var spanPayment = document.getElementsByClassName("modal-payment-close")[0];
+ 
+  spanPayment.onclick = function() {
+      modalPayment.style.display = "none";
+  }
+
+  // window.onclick = function(event) {
+  //   if (event.target == modalPayment) {
+  //     modalPayment.style.display = "none";
+  //   }
+  // }
+
+
+</script>

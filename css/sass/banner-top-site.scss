@@ -1,5 +1,5 @@
 .banner-top-site{
-  background-color: black;
+  background-color: #b80000;
 }
 
 .wrapper-banner-top-site{
@@ -13,7 +13,7 @@
 }
 
 .banner-top-site-image{
-  width: 100px;
+  width: 80px;
 }
 
 .banner-top-site-title{
@@ -22,18 +22,24 @@
   font-size: 24px;
   font-weight: 600;
   color: white;
+  font-weight: bold;
+  letter-spacing: -1px;
 }
 
 .banner-top-site-subtitle{
   text-transform: uppercase;
+  letter-spacing: -1px;
 }
 
 .banner-top-site-title > span {
-  border: 1px solid white;
+  border-radius: 5px;
   font-weight: 600;
-  color: yellow;
+  background-color: #FEEB19;
+  color: #B81818;
   padding-left: 5px;
   padding-right: 5px;
+  font-weight: bold;
+  letter-spacing: -1px;
 }
 
 
