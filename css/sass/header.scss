@@ -168,13 +168,23 @@
       justify-content: space-around;
       align-items: center;
       position: relative;
+
+      &:hover {
+
+        .tooltip{
+          opacity: 1;
+          visibility: visible;
+        }
+
+      }
     }
 
     .customer-cart-link {
       display: flex;
       justify-content: center;
-      align-items: end;
+      align-items: end;     
     }
+    
 
     .customer-cart-image {
       width: 30px;

@@ -56,8 +56,8 @@
   font-weight: bold;
   margin-bottom: -3px;
   color: $second-color;
+  text-transform: uppercase;
 }
-
 
 .navbar a {
   font-size: 14px;
@@ -200,6 +200,10 @@
   display: block;
   text-align: left;
   border-bottom: 1px solid transparent;
+}
+
+.column a > h5 {
+  text-transform: uppercase;
 }
 
 .column a:hover {
