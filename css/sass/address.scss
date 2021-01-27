@@ -1,26 +1,65 @@
 /**
  * Address
  */
-.address {
-    background-color: $color-white;
+
+.wrapper-address {
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: $color-white;
+
+  .address {
     color: $primary-color;
     font: 300 10px $primary-font;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
-    margin-top: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 
-.address > strong {
-    font-weight: bold;
-}
+    strong {
+      font-weight: bold;
+    }
+  }
 
+  .wrapper-credito-agencia {
+    display: flex;
+    justify-content: center;
+    font: 300 13px $primary-font;
+    background-color: black;
+
+    .credito-agencia-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      color: #fff;
+    }
+
+    .credito-agencia-logo {
+      width: 137px;
+      padding: 5px;
+    }
+  }
+}
 
 @media screen and (max-width: 580px) {
-    .address {
-        margin-top: 20px;
-        padding: 10px;
-        text-align: justify;
-    }
-}
+  .wrapper-address {
+    flex-direction: column;
+    height: unset;
 
+    .address {
+      margin-top: 0px;
+      padding: 10px;
+      text-align: justify;
+    }
+
+    .wrapper-credito-agencia {
+      height: 60px;
+      font-size: 10px;
+      margin-right: 0px;
+
+      .credito-agencia-logo {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

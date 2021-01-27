@@ -10,16 +10,15 @@ table {
 
 table td {
   text-align: center;
-  // width: 33%;
 }
 
-tr:nth-child(even) {background-color: #f2f2f2;}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
-
-@media(max-width: 475px){
+@media (max-width: 475px) {
   table td {
     text-align: left;
-    // width: 33%;
     font-size: 12px;
     line-height: 16px;
     padding: 10px;

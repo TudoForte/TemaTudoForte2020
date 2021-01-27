@@ -2,71 +2,60 @@
  * Catalog Pagination
  */
 
- .board{
-   margin-left: 0;
-   margin-right: 0;
- 
- }
+.board {
+  margin-left: 0;
+  margin-right: 0;
+}
 
- .catalogo-pagination{
-   height: 30px;
-   line-height: 30px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
+.catalogo-pagination {
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
- .btn-pagina-anterior{
+.btn-pagina-anterior {
   display: none;
- }
+}
 
- .btn-ultima-pagina{
-   display: none;
- }
- 
- .catalogo-display{
+.btn-ultima-pagina {
   display: none;
- }
+}
 
- .btn-proxima-pagina{
+.catalogo-display {
   display: none;
- }
+}
 
- .separador-paginas{
+.btn-proxima-pagina {
   display: none;
- }
+}
 
- .btns-paginator{
+.separador-paginas {
+  display: none;
+}
+
+.btns-paginator {
   padding-left: 5px;
   padding-right: 5px;
-  margin-left:3px;
- }
+  margin-left: 3px;
+}
 
- .btns-paginator > a{
+.btns-paginator > a {
   color: $color-black;
   text-decoration: none;
- }
- 
- .selectedPg{
+}
+
+.selectedPg {
   border: 1px solid $color-blue;
   background: $color-blue;
   color: $color-white;
- }
+}
 
- .btns-paginator{
-   position: relative;
- }
+.btns-paginator {
+  position: relative;
+}
 
- .btn-primeira-pagina > a {
-  // text-indent: -9999px;
-  // color: #fff
+.btn-primeira-pagina > a {
   display: none;
- }
-
-//  .btn-primeira-pagina:before{
-//   font-family: "FontAwesome";
-//   font-weight: 900;
-//   content: "\f104";
-//   position: absolute;
-//   left: 30px;
-//  }
+}

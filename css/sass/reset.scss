@@ -3,50 +3,131 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
 
 .titCatalogo {
-    text-align: center;
-    padding: 15px;
-    font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
 }
 
 /*
@@ -55,7 +136,7 @@ q:before, q:after {
 
 // bootstrap .container conflict
 .page-content .container {
-    width: auto;
+  width: auto;
 }
 
 // hiding elements
@@ -66,7 +147,7 @@ q:before, q:after {
 .bRight,
 #miniad,
 .stripe {
-    display: none;
+  display: none;
 }
 
 // cleaning elements
@@ -90,192 +171,176 @@ q:before, q:after {
 #ProdAbas li a,
 #ProdAbas .aberta a,
 .visitados {
-    background: none;
-    border: 0;
+  background: none;
+  border: 0;
 }
 
 // fixing display: table
 #visualAbas {
-    display: block;
-    width: auto;
+  display: block;
+  width: auto;
 }
 
-#visualAbas li{
-    display: inline-block;
-    float: none;
+#visualAbas li {
+  display: inline-block;
+  float: none;
 }
 
 #colFotos,
 #colVideo,
-#col3D{
-    display: block;
-    width: auto;
+#col3D {
+  display: block;
+  width: auto;
 }
 
-#foto_p{
-    width: auto;
+#foto_p {
+  width: auto;
 }
 
 #ProdAbas {
-    display: block;
-    width: auto;
+  display: block;
+  width: auto;
 }
 
-
-#botoes{
-    float: unset;
-    width: unset; 
-    max-height: unset;
-    text-align: unset;
-    padding: 0;
+#botoes {
+  float: unset;
+  width: unset;
+  max-height: unset;
+  text-align: unset;
+  padding: 0;
 }
 
-#title{
-    position: unset;
-    text-align: left;
-    padding: 0;
-    border-top: 0;
+#title {
+  position: unset;
+  text-align: left;
+  padding: 0;
+  border-top: 0;
 }
 
 #cepbox {
-    border-top: 0;
-    border-bottom: 0;
-    padding: 0; 
-    margin: 0; 
-    text-align: unset; 
-    font-size: unset;
-    font-weight: unset; 
+  border-top: 0;
+  border-bottom: 0;
+  padding: 0;
+  margin: 0;
+  text-align: unset;
+  font-size: unset;
+  font-weight: unset;
 }
 
-.cepbox-text{
-    display: none;
+.cepbox-text {
+  display: none;
 }
-
-
-// VITRINES SMARTHINT
-// .smarthint {
-//     display: none !important;
-// }
 
 // REMOVER SELO OPINIAO VERIFICADA
-#netreviewsWidgetNum3628widget10av{
-    display: none !important;
+#netreviewsWidgetNum3628widget10av {
+  display: none !important;
 }
 
-#ProdBlock{
-    // display: none;
+#ProdBlock {
+  // display: none;
 }
 
-#relacionados, #Relacionados{
-    display: none
+#relacionados,
+#Relacionados {
+  display: none;
 }
 
-#div_erro > center{
-    display: none;
+#div_erro > center {
+  display: none;
 }
 
-.blocoAlerta{
-    background-image: unset;
-    text-transform: uppercase;
-    font-size: 16px;
+.blocoAlerta {
+  background-image: unset;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
-
-#CadastroAbas{
-    border: unset;
-    background-image: unset;
-    // border-bottom: 1px solid gray;
+#CadastroAbas {
+  border: unset;
+  background-image: unset;
 }
 
 #CadastroAbas li {
-    background-image: unset;
+  background-image: unset;
 }
 
 #CadastroAbas a {
-    background-image: unset;
+  background-image: unset;
 }
 
-
-.image{
-    display: none;
+.image {
+  display: none;
 }
-
 
 #frm2 > div:nth-child(2) > fieldset:nth-child(17) {
-    display: none;
+  display: none;
 }
 
-// #frm2 > div:nth-child(2) > fieldset:nth-child(18) {
-//     background-color: red;
-// }
-
-.txt-dados-entrega{
-    display: none;
+.txt-dados-entrega {
+  display: none;
 }
 
-#endereco_cobranca_diferente{
-    display: none;
+#endereco_cobranca_diferente {
+  display: none;
 }
 
-.dif{
-    display: none;
+.dif {
+  display: none;
 }
 
-.container3{
-    // display: none;
+.container3 {
+  // display: none;
 }
 
-.carrinho-tabs{
-    display: none;
+.carrinho-tabs {
+  display: none;
 }
 
 .board > br {
-    display: none;
+  display: none;
 }
 
-.page-search #Vitrine input[type="image"]{
-    display: none;
+.page-search #Vitrine input[type='image'] {
+  display: none;
 }
 
-.select{
-    font-weight: normal;
+.select {
+  font-weight: normal;
 }
 
-.infobox.danger{
-    display: none;
+.infobox.danger {
+  display: none;
 }
 
-.txt-dados-pessoais, .txt-dados-loja{
-    display: none;
+.txt-dados-pessoais,
+.txt-dados-loja {
+  display: none;
 }
-
 
 .board > p {
-    display: none;
-  }
-  
-  .board > h3 {
-    display: none;
-  }
-  
-  .contato-telefones{
-    display: none;
-  }
-  
-  .email-texto{
-    display: none;
-  }
-  
-  .Mapa{
-    display: none;
-  }
-  
-  .board:after{
-    display: none;
-  }
-  
-  .table{
-    display: unset;
-  }
+  display: none;
+}
 
+.board > h3 {
+  display: none;
+}
 
+.contato-telefones {
+  display: none;
+}
+
+.email-texto {
+  display: none;
+}
+
+.Mapa {
+  display: none;
+}
+
+.board:after {
+  display: none;
+}
+
+.table {
+  display: unset;
+}

@@ -1,4 +1,4 @@
-.wrapper-menu-mobile-category{
+.wrapper-menu-mobile-category {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -6,8 +6,7 @@
   height: 100px;
 }
 
-.menu-mobile-category-item{
-  // width: 32%;
+.menu-mobile-category-item {
   height: 60px;
   background-color: $second-color;
   display: flex;
@@ -19,22 +18,19 @@
   text-align: center;
   color: $color-white;
   padding: 10px;
-  // margin-bottom: 5px;
   text-decoration: none;
 }
 
-.menu-mobile-category-item:hover{
+.menu-mobile-category-item:hover {
   color: $color-white;
 }
 
-.pagination-mobile{
-  top:85px;
+.pagination-mobile {
+  top: 85px;
 }
 
-
-
 @media screen and (max-width: 425px) {
-  .navbar-icon{
+  .navbar-icon {
     display: block;
     width: 30px;
     height: 30px;

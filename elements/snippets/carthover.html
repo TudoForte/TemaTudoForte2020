@@ -2,15 +2,15 @@
   .tooltip {
     opacity: -1;
     visibility: hidden;
-    background-color: #FFE;
+    background-color: #FFF;
     text-align: left;
     position: absolute;
     top: 30px;
     right: -20px;
-    -webkit-transition: all .3s .1s;
-    -moz-transition: all .3s .1s;
-    -o-transition: all .3s .1s;
-    transition: all .3s .1s;
+    /* -webkit-transition: all .1s .01s;
+    -moz-transition: all .1s .1s;
+    -o-transition: all .1s .1s;
+    transition: all .1s .1s; */
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -37,6 +37,7 @@
     justify-content: space-between;
     width: 300px;
     margin: 15px;
+    background-color: #FFF;
   }
 
   .item-quantity {
@@ -56,6 +57,7 @@
     padding-top: 10px; 
     padding-bottom: 5px; 
     border-bottom: 1px solid #eee;
+    background-color: #fff;
   }
 
   .item .item-image {
@@ -84,6 +86,7 @@
   .wrapper-itens{
     height: 175px;
     overflow-y: scroll;
+    background-color: #FFF;
   }
 
   .wrapper-itens::-webkit-scrollbar-track {
@@ -159,92 +162,21 @@
 <div id="MeuCarrinhoHeader" class="tooltip">
   <div class="my-cart">
     <h3>Meu <strong>Carrinho</strong></h3>
-    <span id="quantidadeItensMeuCarrinhoHeader" class="item-quantity">1 item</span>
   </div>
-  <div id="produtosMeuCarrinhoHeader" class="my-orders">
+  <div class="my-orders">
 
-    <div class="wrapper-itens">
+    <div id="wrapper-itens" class="wrapper-itens">
 
-      <div class="item">
-        <img class="item-image" src="https://static3.tcdn.com.br/img/img_prod/332274/180_camera_intelbras_hd_720p_vhd_1120_b_g5_com_lente_3_6mm_visao_noturna_20m_bullet_resistente_a_chuva_i_651_1_20200113164621.jpg"/>
-        <div class="item-description">
-          <h4 class="item-description-title">Câmera Intelbras HD 720p VHD 1120 B G5 com Lente 3,6mm, Visão Noturna 20m, Bullet Resistente à Chuva IP66
-          </h4>
-          <div class="item-wrapper-price">  
-            <span class="items-quantity">Quantidade:1</span>
-            <span class="item-price">R$229,00</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <img class="item-image" src="https://static3.tcdn.com.br/img/img_prod/332274/180_camera_intelbras_hd_720p_vhd_1120_b_g5_com_lente_3_6mm_visao_noturna_20m_bullet_resistente_a_chuva_i_651_1_20200113164621.jpg"/>
-        <div class="item-description">
-          <h4 class="item-description-title">Kit Câmeras + DVR Intelbras + App Grátis de Monitoramento, Câmeras HD 720p 20m Infravermelho de Visão Noturna + Fonte, Cabos e Acessórios
-          </h4>
-          <div class="item-wrapper-price">  
-            <span class="items-quantity">Quantidade:1</span>
-            <span class="item-price">R$789,00</span>
-          </div>
-        </div>
-      </div>
-  
-      <div class="item">
-        <img class="item-image" src="https://static3.tcdn.com.br/img/img_prod/332274/180_kit_cameras_dvr_intelbras_app_gratis_de_monitoramento_cameras_hd_720p_20m_infravermelho_de_visao_not_2726_1_20200304104405.png"/>
-        <div class="item-description">
-          <h4 class="item-description-title">Câmera Intelbras VHL 1220 B Bullet, Full HD 1080p HDCVI, Infra 20m, Resistente a
-            Chuva IP66</h4>
-          <div class="item-wrapper-price">  
-            <span class="items-quantity">Quantidade:1</span>
-            <span class="item-price">R$429,00</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <img class="item-image" src="https://static3.tcdn.com.br/img/img_prod/332274/180_camera_hd_720p_1mp_orion_gs0021_giga_security_deteccao_de_pessoas_alcance_ir_30_metros_9468_1_20191018160933.jpg"/>
-        <div class="item-description">
-          <h4 class="item-description-title">Câmera HD 720p 1MP Orion GS0021 Giga Security Orion Detecção de pessoas, alcance ir 30 metros
-          </h4>
-          <div class="item-wrapper-price">  
-            <span class="items-quantity">Quantidade:1</span>
-            <span class="item-price">R$130,11</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <img class="item-image" src="https://static3.tcdn.com.br/img/img_prod/332274/180_camera_hd_720p_1mp_orion_gs0021_giga_security_deteccao_de_pessoas_alcance_ir_30_metros_9468_1_20191018160933.jpg"/>
-        <div class="item-description">
-          <h4 class="item-description-title">Câmera HD 720p 1MP Orion GS0021 Giga Security Orion Detecção de pessoas, alcance ir 30 metros
-          </h4>
-          <div class="item-wrapper-price">  
-            <span class="items-quantity">Quantidade:1</span>
-            <span class="item-price">R$130,11</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <img class="item-image" src="https://static3.tcdn.com.br/img/img_prod/332274/180_camera_hd_720p_1mp_orion_gs0021_giga_security_deteccao_de_pessoas_alcance_ir_30_metros_9468_1_20191018160933.jpg"/>
-        <div class="item-description">
-          <h4 class="item-description-title">Câmera HD 720p 1MP Orion GS0021 Giga Security Orion Detecção de pessoas, alcance ir 30 metros
-          </h4>
-          <div class="item-wrapper-price">  
-            <span class="items-quantity">Quantidade:1</span>
-            <span class="item-price">R$130,11</span>
-          </div>
-        </div>
-      </div>
+      <div class="item"><p>Carrinho Vazio!</p></div>
 
     </div>
 
     <div class="total-orders">
       <strong>Valor Total</strong>
       <span class="details">
-        <strong id="valorTotalMeuCarrinhoHeader" class="total">R$13.604,00</strong>
+        R$ <strong class="total" id="total">0</strong>
       </span>
-      <a id="linkFinalizarPedidoMeuCarrinhoHeader" class="finalize-order" href="" title="Finalizar Pedido">
+      <a class="finalize-order" href="{{ links.cart }}" title="Finalizar Pedido">
         Comprar Produtos
       </a>
     </div>

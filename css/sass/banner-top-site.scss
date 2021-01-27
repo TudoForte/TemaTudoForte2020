@@ -82,16 +82,20 @@
     font-size: 13px;
     margin-left: 0;
     margin-right: 0;
+    letter-spacing: 0px;
   }
 
   .banner-top-site-subtitle {
-    font-size: 7px;
+    font-size: 9px;
     margin-top: 12px;
+    letter-spacing: 1px;
   }
 
   .banner-top-site-title > span {
     padding-left: 3px;
     padding-right: 3px;
+    border-radius: 0;
+    margin-left: 3px;
   }
 
   .banner-top-site-image{
@@ -105,7 +109,7 @@
   }
 
   .banner-top-site-title > span {
-    padding-left: 1.5px;
-    padding-right: 1.5px;
+    padding-left: 2px;
+    padding-right: 2px;
   }
 }
