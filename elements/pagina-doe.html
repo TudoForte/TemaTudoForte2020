@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+
+        <style type="text/css">
+            .board {
+                margin: 0px;
+            }
+
+            .board_htm {
+                position: relative;
+                margin: 0;
+                clear: both;
+                display: table;
+                width: 100%;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .wrapper-header-donation {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 200px;
+                background-color: #0047d9;
+                color: #fff;
+            }
+
+            .wrapper-header-donation-title {
+                margin: 0;
+                font-size: 32px;
+                color: #fff;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .section-donation {
+                margin: 40px auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 40px;
+                box-shadow: #e3e9f3 0px 2px 6px 0px;
+            }
+
+            .section-donation-image {
+                width: 250px;
+                margin-right: 20px;
+            }
+
+            .section-donation-list {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .donation-list-item {
+                margin: 15px;
+                line-height: 10px;
+
+            }
+
+            .donation-list-item>strong {
+                font-weight: bold;
+            }
+
+
+
+            @media(max-width: 600px) {
+
+                .wrapper-header-donation {
+                    margin-bottom: 20px;
+                }
+
+                .wrapper-header-donation-title {
+                    flex-direction: column;
+                    font-size: 18px;
+                    text-align: center;
+                }
+
+                .section-donation-image {
+                    margin-right: 0px;
+                    margin-bottom: 20px;
+                }
+
+
+                .section-donation {
+                    flex-direction: column;
+                    margin: 0px;
+                    padding: 20px;
+                }
+
+                .donation-list-item {
+                    margin: 15px;
+                    line-height: 20px;
+                    text-align: center;
+                }
+
+
+            }
+        </style>
+
+        <div class="wrapper-header-donation">
+            <h1 class="wrapper-header-donation-title"> <img width="130px"
+                    src="https://static3.tcdn.com.br/img/editor/up/332274/osdonate.png" alt="Logo Doação"
+                    title="Logo Doação" /> Doações Realizadas</h1>
+        </div>
+
+        <div class="section-donation">
+            <img class="section-donation-image" src="https://static3.tcdn.com.br/img/editor/up/332274/logoapap.jpg"
+                alt="Logo APAP Associação de Proteção dos Animais de Penápolis"
+                title="Logo APAP Associação de Proteção dos Animais de Penápolis" />
+
+            <ul class="section-donation-list">
+                <li class="donation-list-item"><strong>Nome da Instituição:</strong> APAP Associação de Proteção dos
+                    Animais de Penápolis</li>
+                <li class="donation-list-item"><strong>Total Recebido:</strong> <span id="donation-value"></span></li>
+            </ul>
+        </div>
+
+        <script>
+
+            const api = (config, callback) => {
+                const xhr = new XMLHttpRequest();
+
+                xhr.addEventListener('readystatechange', function () {
+                    if (this.readyState === 4) {
+                        const data = JSON.parse(this.response);
+                        callback(data);
+                    }
+                });
+
+                xhr.open(config.method, config.url);
+                xhr.send(config.data);
+            };
+
+            const config = {
+                method: 'GET',
+                url: `https://interno.hubseg.com.br/api/partners/coupon-assigned/9932daaa-a8c5-4d9c-a73e-8b265f8f3d80`,
+            };
+
+            const callback = (data) => {
+
+                let elementDonationValue = document.getElementById('donation-value')
+                elementDonationValue.textContent = (new Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(data.balance.approved))
+            
+            };
+
+            api(config, callback);
+
+
+        </script>
+
+
+    </body>
+
+</html>
